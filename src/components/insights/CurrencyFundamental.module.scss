@@ -1,0 +1,73 @@
+.fundamentalEdgeInsight {
+    margin-top: 80px;
+
+    .fundamentalEdgeInsightContainer {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        align-items: stretch;
+        min-height: 500px;
+
+        .fundamentalEdgeInsightContent {
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+
+            .fundamentalEdgeInsightHeader {
+                .fundamentalEdgeInsightHeaderTitle {
+                    text-align: center;
+                    width: 100%;
+                    border: 3px solid #01F595;
+                    padding: 12px 22px;
+                    border-radius: 5px;
+
+                    h1 {
+                        color: #01F595;
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                }
+
+                .fundamentalEdgeInsightPrimaryDescription {
+                    font-size: 16px;
+                    line-height: 27px;
+                    text-align: center;
+                    margin-top: 45px;
+                }
+            }
+
+            .fundamentalEdgeInsightFooter {
+                margin-top: 45px;
+                flex-grow: 1;
+
+                .fundamentalEdgeInsightFooterCard {
+                    border-radius: 5px;
+                    text-align: center;
+                    line-height: 27px;
+                    padding: 80px 12px;
+                    border: 3px solid #01F595;
+                    height: 100%;
+                }
+            }
+        }
+
+        .fundamentalEdgeInsightImageContainer {
+            width: 66%;
+            border: 3px solid #01F595;
+            border-radius: 5px;
+            line-height: 26px;
+            display: flex;
+            position: relative;
+
+            .fundamentalEdgeInsightImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.highlightedText {
+    color: #01F595;
+}

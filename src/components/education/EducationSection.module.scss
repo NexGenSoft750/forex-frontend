@@ -1,0 +1,112 @@
+.educationSection {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .educationSectionHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        /* Add a gap for spacing */
+
+        .educationSectionTitle {
+            text-align: center;
+            border: 3px solid #ff0000;
+            padding: 12px 22px;
+            border-radius: 5px;
+            min-width: 300px;
+            flex-shrink: 0;
+            /* Add this to prevent the title from shrinking */
+
+            h1 {
+                color: #ff0000;
+                font-size: 35px;
+                font-weight: 600;
+            }
+        }
+
+        .educationSectionShortDescription {
+            font-size: 32px;
+            font-weight: 500;
+            text-align: right;
+            /* Add this to align the text to the right */
+        }
+    }
+
+    .educationContainer {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+
+        .educationCard {
+            flex: 1 1 0;
+            border: 2px solid white;
+            border-radius: 16px;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            align-items: center;
+
+            .educationCardHeader {
+                width: 100%;
+                text-align: center;
+                background-color: #003d25;
+                padding: 16px 15px;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+
+                .educationCardTitle {
+                    font-size: 25px;
+                    font-weight: 500;
+                    line-height: 34px;
+                }
+            }
+
+            .educationCardBody {
+                padding: 0px 15px;
+
+                .educationCardDescription {
+                    font-size: 13.5px;
+                    line-height: 28px;
+                    text-align: center;
+                }
+            }
+
+            .educationCardFooter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 22px;
+
+                .educationCardButton {
+                    background-color: #01F595;
+                    padding: 8px 8px;
+                    border-radius: 5px;
+                    border: none;
+                    cursor: pointer;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 500;
+                    min-width: 120px;
+                }
+            }
+        }
+    }
+
+    .educationSectionFooter {
+        background-color: #171515;
+        text-align: center;
+        margin-top: 17px;
+        padding: 17px;
+        line-height: 28px;
+    }
+}
+
+.highlightedText {
+    color: #01F595;
+}

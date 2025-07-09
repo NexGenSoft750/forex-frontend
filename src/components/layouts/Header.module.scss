@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.headerLogo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex: 0 0 auto;
+}
+
+.loginBtn {
+    background: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 8px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.languageDropdown {
+    min-width: 180px;
+    display: flex;
+    justify-content: flex-end;
+
+    :global {
+        .dropdown-toggle {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            color: #fff !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+
+            &::after {
+                display: none !important;
+            }
+        }
+
+        .dropdown-menu {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            min-width: 180px;
+            padding: 8px;
+            margin-top: 8px;
+        }
+
+        .dropdown-item {
+            color: #fff !important;
+            padding: 8px 12px;
+            border-radius: 4px;
+            width: 100%;
+
+            &:hover,
+            &:focus {
+                background: rgba(255, 255, 255, 0.1) !important;
+            }
+
+            &.active {
+                background: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
+
+.languageDropdownTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.languageDropdownFlag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.languageDropdownItemTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    width: 100%;
+}
+
+.languageDropdownItemFlag {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}

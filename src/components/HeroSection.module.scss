@@ -1,0 +1,12 @@
+.heroSection {
+    display: flex;
+    margin-top: 25px;
+
+    .heroSectionAside {
+        width: 15%;
+    }
+
+    .heroSectionContent {
+        width: 85%;
+    }
+}

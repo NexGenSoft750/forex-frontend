@@ -1,0 +1,24 @@
+.heroSectionContentText {
+    text-align: center;
+    font-weight: 600;
+
+    .heroSectionText {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: #ffffff;
+    }
+
+    .heroSectionLargeLightText {
+        font-size: 80px;
+    }
+
+    .heroSectionSmallLightText {
+        font-size: 35px;
+        margin-left: 13px;
+    }
+
+    .heroSectionLargeDarkText {
+        font-size: 80px;
+        color: #FF0000 !important;
+    }
+}

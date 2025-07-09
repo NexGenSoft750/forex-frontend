@@ -1,0 +1,99 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+  background: url('/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+section {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+ul {
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// Modal styles
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6) !important; // Reduced opacity from 0.75 to 0.6
+  backdrop-filter: blur(1.5px) !important; // Reduced blur from 4px to 2px
+}
+
+.modal-backdrop.show {
+  opacity: 1 !important;
+}
+
+.modal {
+  background: transparent !important;
+
+  .fa,
+  .fas,
+  .far,
+  .fab,
+  .fa-solid,
+  .fa-regular,
+  .fa-brands {
+    color: inherit !important; // This ensures icons inherit their parent's color
+  }
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 1.75rem auto !important;
+  max-width: 620px !important;
+  pointer-events: none;
+  z-index: 1056 !important; // Ensure modal content is above backdrop
+}
+
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -50px);
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  outline: 0;
+}
