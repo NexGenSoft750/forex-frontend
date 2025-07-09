@@ -4,7 +4,7 @@ import { locales, defaultLocale } from './config';
 export default getRequestConfig(async ({ locale }) => {
     const resolvedLocale = locale || defaultLocale;
 
-    if (!locales.includes(resolvedLocale as any)) {
+    if (!locales.includes(resolvedLocale as string)) {
         throw new Error(`Locale '${resolvedLocale}' is not supported`);
     }
 

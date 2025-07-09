@@ -35,7 +35,7 @@ export default async function RootLayout({
 
     return (
         <html lang={locale}>
-            <body suppressHydrationWarning>
+            <body className={inter.className} suppressHydrationWarning>
                 <NextIntlClientProvider messages={messages[locale]} locale={locale}>
                     <LanguageProvider>
                         {children}

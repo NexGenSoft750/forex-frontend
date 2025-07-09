@@ -9,7 +9,7 @@ export const useTranslations = () => {
         t: (key: string, params?: Record<string, string>) => {
             try {
                 return t(key, params);
-            } catch (error) {
+            } catch (_error) {
                 console.error(`Translation key not found: ${key}`);
                 return key;
             }

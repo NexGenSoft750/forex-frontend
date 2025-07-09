@@ -161,6 +161,7 @@ const RegisterModal = ({ show, onHide, onSwitchToLogin }: RegisterModalProps) =>
           <Button
             className={styles.registerButton}
             onClick={handleRegister}
+            disabled={!isFormValid}
           >
             {t('signup')}
           </Button>
