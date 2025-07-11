@@ -10,10 +10,10 @@ export function NavBar() {
     return (
         <nav>
             <ul className={styles.headerNavigation}>
-                <li><Link href="/" className={styles.navLinks}>{t('home')}</Link></li>
-                <li><Link href="/about" className={styles.navLinks}>{t('aboutUs')}</Link></li>
-                <li><Link href="/" className={styles.navLinks}>{t('packages')}</Link></li>
-                <li><Link href="/" className={styles.navLinks}>{t('forum')}</Link></li>
+                <li><Link href={`/${currentLanguage}`} className={styles.navLinks}>{t('home')}</Link></li>
+                <li><Link href={`/${currentLanguage}/about`} className={styles.navLinks}>{t('aboutUs')}</Link></li>
+                <li><Link href={`/${currentLanguage}`} className={styles.navLinks}>{t('packages')}</Link></li>
+                <li><Link href={`/${currentLanguage}`} className={styles.navLinks}>{t('forum')}</Link></li>
             </ul>
         </nav>
     )
