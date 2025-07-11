@@ -1,0 +1,141 @@
+.aboutMain {
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.aboutHero {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
+    padding: 80px 0;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.aboutHeroContent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.aboutTitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+.aboutSubtitle {
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.aboutContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 65px;
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+}
+
+.aboutSection {
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.sectionTitle {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.sectionText {
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+.featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 12px;
+        padding-left: 20px;
+        position: relative;
+
+        &:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+    }
+}
+
+.advantagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.advantageCard {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.advantageTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.advantageText {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}

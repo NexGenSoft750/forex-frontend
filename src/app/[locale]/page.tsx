@@ -2,6 +2,7 @@
 
 import { HeroSection } from '@/components/HeroSection';
 import { Header } from '../../components/layouts/Header';
+import { Footer } from '../../components/layouts/Footer';
 import { FundamentalAnalysisSection } from '@/components/FundamentalAnalysisSection';
 import { FundamentalEdgeInsight } from '@/components/insights/FundamentalEdgeInsight';
 import { FundmentalHeatmap } from '@/components/insights/FundamentalHetmap';
@@ -32,6 +33,7 @@ export default function Home() {
                 <TechnicalHeatmap />
                 <CurrencyStrengthMeter />
             </main>
+            <Footer />
         </>
     );
-} 
+}

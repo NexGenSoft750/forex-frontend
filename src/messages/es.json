@@ -292,5 +292,60 @@
             },
             "imageAlt": "Medidor de Fuerza de Divisas"
         }
+    },
+    "footer": {
+        "description": "Su puerta de entrada al trading inteligente de forex con herramientas integrales de análisis fundamental y técnico.",
+        "quickLinks": "Enlaces Rápidos",
+        "home": "Inicio",
+        "aboutUs": "Acerca de Nosotros",
+        "packages": "Paquetes",
+        "forum": "Foro",
+        "contact": "Contacto",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "allRightsReserved": "Todos los derechos reservados."
+    },
+    "about": {
+        "title": "Acerca de Nosotros",
+        "subtitle": "Empoderando a los traders con análisis de mercado integral y herramientas de trading profesionales",
+        "ourMission": {
+            "title": "Nuestra Misión",
+            "description": "En Forex Fundamental Edge, nuestra misión es democratizar el acceso a herramientas y análisis de trading de forex de grado profesional. Creemos que cada trader, independientemente de su nivel de experiencia, merece acceso al mismo análisis fundamental y técnico de alta calidad en el que confían los traders institucionales."
+        },
+        "whatWeDo": {
+            "title": "Lo Que Hacemos",
+            "description": "Proporcionamos soluciones integrales de trading de forex que combinan tecnología de vanguardia con experiencia profunda del mercado. Nuestra plataforma ofrece:",
+            "features": {
+                "fundamentalAnalysis": "Herramientas avanzadas de análisis fundamental incluyendo reportes COT, calendarios económicos e indicadores de fuerza de divisas",
+                "technicalIndicators": "Herramientas profesionales de análisis técnico con datos de mercado en tiempo real e indicadores personalizables",
+                "marketInsights": "Análisis de mercado diario, análisis de noticias y comentarios de expertos de traders experimentados",
+                "educationalResources": "Recursos educativos integrales para ayudar a los traders a mejorar sus habilidades y conocimientos"
+            }
+        },
+        "whyChooseUs": {
+            "title": "Por Qué Elegirnos",
+            "advantages": {
+                "expertise": {
+                    "title": "Análisis Experto",
+                    "description": "Nuestro equipo de analistas profesionales aporta años de experiencia en los mercados de forex y trading institucional."
+                },
+                "realTime": {
+                    "title": "Datos en Tiempo Real",
+                    "description": "Acceso a datos de mercado en vivo, indicadores en tiempo real y actualizaciones instantáneas del mercado para estar por delante de la curva."
+                },
+                "comprehensive": {
+                    "title": "Herramientas Integrales",
+                    "description": "Plataforma todo-en-uno con herramientas de análisis tanto fundamental como técnico en una solución integrada."
+                },
+                "support": {
+                    "title": "Soporte 24/7",
+                    "description": "Equipo de soporte al cliente dedicado disponible las 24 horas para ayudar con cualquier pregunta o problema."
+                }
+            }
+        },
+        "ourTeam": {
+            "title": "Nuestro Equipo",
+            "description": "Nuestro diverso equipo de analistas, desarrolladores y expertos financieros trabajan juntos para brindarle los análisis de trading más precisos y accionables. Con décadas de experiencia combinada en los mercados de forex, entendemos lo que se necesita para tener éxito en este entorno dinámico."
+        }
     }
 }

@@ -296,5 +296,60 @@
             },
             "imageAlt": "货币强度仪"
         }
+    },
+    "footer": {
+        "description": "您通往智能外汇交易的门户，提供全面的基本面和技术分析工具。",
+        "quickLinks": "快速链接",
+        "home": "首页",
+        "aboutUs": "关于我们",
+        "packages": "套餐",
+        "forum": "论坛",
+        "contact": "联系我们",
+        "email": "邮箱",
+        "phone": "电话",
+        "allRightsReserved": "版权所有。"
+    },
+    "about": {
+        "title": "关于我们",
+        "subtitle": "通过全面的市场洞察和专业交易工具赋能交易者",
+        "ourMission": {
+            "title": "我们的使命",
+            "description": "在 Forex Fundamental Edge，我们的使命是让每个人都能接触到专业级的外汇交易洞察和工具。我们相信，每个交易者，无论经验水平如何，都应该获得机构交易者所依赖的高质量基本面和技术分析。"
+        },
+        "whatWeDo": {
+            "title": "我们的服务",
+            "description": "我们提供全面的外汇交易解决方案，将尖端技术与深厚的市场专业知识相结合。我们的平台提供：",
+            "features": {
+                "fundamentalAnalysis": "先进的基本面分析工具，包括 COT 报告、经济日历和货币强度指标",
+                "technicalIndicators": "专业的技术分析工具，具有实时市场数据和可定制指标",
+                "marketInsights": "来自经验丰富交易者的每日市场洞察、新闻分析和专家评论",
+                "educationalResources": "全面的教育资源，帮助交易者提高技能和知识"
+            }
+        },
+        "whyChooseUs": {
+            "title": "为什么选择我们",
+            "advantages": {
+                "expertise": {
+                    "title": "专家分析",
+                    "description": "我们的专业分析师团队在外汇市场和机构交易方面拥有多年经验。"
+                },
+                "realTime": {
+                    "title": "实时数据",
+                    "description": "获取实时市场数据、实时指标和即时市场更新，领先于趋势。"
+                },
+                "comprehensive": {
+                    "title": "全面工具",
+                    "description": "一体化平台，在一个集成解决方案中提供基本面和技术分析工具。"
+                },
+                "support": {
+                    "title": "24/7 支持",
+                    "description": "专门的客户支持团队全天候提供服务，协助解决任何问题。"
+                }
+            }
+        },
+        "ourTeam": {
+            "title": "我们的团队",
+            "description": "我们多样化的分析师、开发人员和金融专家团队共同为您提供最准确和可行的交易洞察。凭借在外汇市场数十年的综合经验，我们了解在这个动态环境中取得成功所需的条件。"
+        }
     }
 }

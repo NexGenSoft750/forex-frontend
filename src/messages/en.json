@@ -202,7 +202,7 @@
             "secondaryDescription": {
                 "before": "At",
                 "highlight": "Forex Fundamental Edge",
-                "content": "The Fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
+                "content": "The fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
             },
             "imageAlt": "Fundamental Heatmap Insight"
         },
@@ -238,7 +238,7 @@
                     "description": {
                         "before": "At",
                         "highlight": "Forex Fundamental Edge",
-                        "content": "The fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others act the way they do because of who they are, rather than because of circumstances beyond their control."
+                        "content": "The fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
                     }
                 },
                 "retailPositions": {
@@ -247,7 +247,7 @@
                     "description": {
                         "before": "At",
                         "highlight": "Forex Fundamental Edge",
-                        "content": "The fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others act the way they do because of who they are, rather than because of circumstances beyond their control."
+                        "content": "The fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
                     }
                 }
             }
@@ -278,7 +278,7 @@
             "description": {
                 "before": "At",
                 "highlight": "Forex Fundamental Edge",
-                "content": "The Fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
+                "content": "The fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
             },
             "imageAlt": "Technical Heatmap"
         },
@@ -291,6 +291,61 @@
                 "content": "The Fundamental attribution error is a cognitive bias where individuals tend to overemphasize personality traits when explaining the behavior of others, while underemphasizing situational factors that might have influenced their actions. In simpler terms, we often assume others are acting the way they do because of who they are, rather than because of circumstances beyond their control."
             },
             "imageAlt": "Currency Strength Meter"
+        }
+    },
+    "footer": {
+        "description": "Your gateway to smart forex trading with comprehensive fundamental and technical analysis tools.",
+        "quickLinks": "Quick Links",
+        "home": "Home",
+        "aboutUs": "About Us",
+        "packages": "Packages",
+        "forum": "Forum",
+        "contact": "Contact",
+        "email": "Email",
+        "phone": "Phone",
+        "allRightsReserved": "All rights reserved."
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "Empowering traders with comprehensive market insights and professional trading tools",
+        "ourMission": {
+            "title": "Our Mission",
+            "description": "At Forex Fundamental Edge, our mission is to democratize access to professional-grade forex trading insights and tools. We believe that every trader, regardless of experience level, deserves access to the same high-quality fundamental and technical analysis that institutional traders rely on."
+        },
+        "whatWeDo": {
+            "title": "What We Do",
+            "description": "We provide comprehensive forex trading solutions that combine cutting-edge technology with deep market expertise. Our platform offers:",
+            "features": {
+                "fundamentalAnalysis": "Advanced fundamental analysis tools including COT reports, economic calendars, and currency strength indicators",
+                "technicalIndicators": "Professional technical analysis tools with real-time market data and customizable indicators",
+                "marketInsights": "Daily market insights, news analysis, and expert commentary from seasoned traders",
+                "educationalResources": "Comprehensive educational resources to help traders improve their skills and knowledge"
+            }
+        },
+        "whyChooseUs": {
+            "title": "Why Choose Us",
+            "advantages": {
+                "expertise": {
+                    "title": "Expert Analysis",
+                    "description": "Our team of professional analysts brings years of experience in forex markets and institutional trading."
+                },
+                "realTime": {
+                    "title": "Real-time Data",
+                    "description": "Access to live market data, real-time indicators, and instant market updates to stay ahead of the curve."
+                },
+                "comprehensive": {
+                    "title": "Comprehensive Tools",
+                    "description": "All-in-one platform with both fundamental and technical analysis tools in one integrated solution."
+                },
+                "support": {
+                    "title": "24/7 Support",
+                    "description": "Dedicated customer support team available around the clock to assist with any questions or issues."
+                }
+            }
+        },
+        "ourTeam": {
+            "title": "Our Team",
+            "description": "Our diverse team of analysts, developers, and financial experts work together to provide you with the most accurate and actionable trading insights. With decades of combined experience in forex markets, we understand what it takes to succeed in this dynamic environment."
         }
     }
 }
