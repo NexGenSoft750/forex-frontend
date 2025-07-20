@@ -14,7 +14,7 @@ const messages = { en, ru, zh, es };
 
 export default function App({ Component, pageProps }: AppProps) {
     const pathname = usePathname();
-    const locale = getLocale(pathname);
+    const locale = getLocale(pathname || '/');
 
     return (
         <NextIntlClientProvider

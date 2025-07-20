@@ -21,7 +21,6 @@ export default function Layout({ locale, fonts, children }: LayoutProps) {
     const [layout, setLayout] = useState<'main' | 'dashboard'>('main');
 
     useEffect(() => {
-        console.log('test');
         if (pathname?.startsWith('/dashboard')) {
             setLayout('dashboard');
         } else {
