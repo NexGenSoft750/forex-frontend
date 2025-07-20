@@ -1,7 +1,7 @@
 "use client";
 
-import { Header } from '../../../components/layouts/Header';
-import { Footer } from '../../../components/layouts/Footer';
+import { Header } from '@/components/layouts/Header';
+import { Footer } from '@/components/layouts/Footer';
 import { useTranslations } from 'next-intl';
 import styles from './about.module.scss';
 

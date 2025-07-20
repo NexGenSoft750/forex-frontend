@@ -1,8 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
-import { Locale, locales, defaultLocale, getLocale } from '../i18n/config';
+import { Locale, defaultLocale, getLocaleFromCookie } from '../i18n/config';
 
 interface LanguageContextType {
     currentLanguage: Locale;
@@ -24,35 +23,38 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children }: LanguageProviderProps) => {
-    const router = useRouter();
-    const pathname = usePathname();
     const [currentLanguage, setCurrentLanguage] = useState<Locale>(defaultLocale);
+    const [key, setKey] = useState(0); // Force re-render key
 
     useEffect(() => {
-        if (pathname) {
-            const locale = getLocale(pathname);
-            setCurrentLanguage(locale);
-        }
-    }, [pathname]);
+        // Get locale from cookie on client side
+        const getCookie = (name: string) => {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop()?.split(';').shift();
+            return undefined;
+        };
+
+        const cookieLocale = getCookie('locale');
+        const locale = getLocaleFromCookie(cookieLocale);
+        setCurrentLanguage(locale);
+    }, []);
 
     const changeLanguage = (lang: Locale) => {
         setCurrentLanguage(lang);
-        if (!pathname) return;
 
-        const segments = pathname.split('/');
+        // Set cookie
+        document.cookie = `locale=${lang}; path=/; max-age=${60 * 60 * 24 * 365}`;
 
-        if (locales.includes(segments[1] as Locale)) {
-            segments[1] = lang;
-        } else {
-            segments.splice(1, 0, lang);
-        }
-
-        router.push(segments.join('/'));
+        // Force re-render by updating the key
+        setKey(prev => prev + 1);
     };
 
     return (
         <LanguageContext.Provider value={{ currentLanguage, changeLanguage }}>
-            {children}
+            <div key={key}>
+                {children}
+            </div>
         </LanguageContext.Provider>
     );
 }; 

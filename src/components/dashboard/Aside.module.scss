@@ -1,0 +1,30 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+    width: 380px;
+
+    .sidebar__logo-wrapper {
+        align-items: center;
+        display: flex;
+        position: relative;
+        background-color: white;
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        overflow: hidden;
+        color: black;
+        font-size: 2rem;
+        font-weight: 500;
+        justify-content: center;
+
+        .sidebar__logo-img {
+            object-fit: cover;
+        }
+    }
+}
+
+.sidebar-bg-dark {
+    background-color: #000000;
+}

@@ -14,21 +14,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #ffffff;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
-body {
+body[data-layout="main"] * {
+  color: #ffffff;
+}
+
+html[data-layout="main"] {
+  font-size: 100%;
+}
+
+body[data-layout="main"] {
   background: url('/bg.png') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   height: 100vh;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
 
-section {
-  padding-left: 65px;
-  padding-right: 65px;
+  section {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
 }
 
 ul {

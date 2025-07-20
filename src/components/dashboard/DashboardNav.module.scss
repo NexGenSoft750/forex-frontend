@@ -1,0 +1,29 @@
+.dashboard-nav {
+    font-size: 1.6rem;
+
+    .dashboard-nav__container {
+        .dashboard-nav__item {
+            color: #999999;
+            margin-top: 3.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            transition: color 0.2s ease-in-out;
+            cursor: pointer;
+
+            .dashboard-nav__link {
+                color: #999999;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: white !important;
+                }
+            }
+
+            &:hover {
+                color: white !important;
+            }
+        }
+    }
+}

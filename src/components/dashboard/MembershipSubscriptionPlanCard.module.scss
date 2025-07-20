@@ -1,0 +1,231 @@
+.subscription-plan-card {
+    flex: 1 1 0;
+    background-color: #FFFFFF;
+    border-radius: 1.2rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+
+    .subscription-plan-card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 2rem;
+
+        .subscription-plan-card__name {
+            color: #1F2937;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+        .subscription-plan-card__badge {
+            padding: .5rem 1.8rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 3rem;
+        }
+    }
+
+    .subscription-plan-card__body {
+        margin-top: 1.3rem;
+
+        .subscription-plan-card__tax-price {
+            color: #6B7280;
+            font-size: 1.45rem;
+            font-weight: 400;
+        }
+
+        .subscription-plan-card__prices {
+            margin-top: 1.6rem;
+
+            .subscription-plan-card__discounted-price {
+                position: relative;
+                color: #4D44B5;
+                font-size: 2.6rem;
+                font-weight: 700;
+
+                .subscription-plan-card__price-period {
+                    font-size: 1.45rem;
+                    font-weight: 400;
+                    margin-left: 5px;
+                }
+
+                .subscription-plan-card__original-price {
+                    position: absolute;
+                    top: -0.6rem;
+                    right: -45px;
+                    color: #EF4444;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    text-decoration: line-through;
+                }
+            }
+        }
+
+        .subscription-plan-card__duration {
+            color: #6B7280;
+            font-size: 1.35rem;
+            font-weight: 400;
+            display: block;
+            margin-top: 1.5rem;
+        }
+
+        .subscription-plan-card__text-box {
+            resize: none;
+            border: none;
+            outline: none;
+            color: #4B5563;
+            background-color: #f9fafb;
+            border-radius: .8rem;
+            padding: 1.4rem;
+            margin-top: 1.4rem;
+            width: 100%;
+
+            &::placeholder {
+                color: #4B5563;
+            }
+        }
+    }
+
+    .subscription-plan-card__footer {
+        margin-top: auto;
+        display: flex;
+
+        .subscription-plan-card__subscribe-btn {
+            color: #ffffff;
+            background-color: #4D44B5;
+            border: none;
+            border-radius: .8rem;
+            padding: 1.7rem;
+            width: 100%;
+            font-size: 1.4rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.silver {
+    border-left: 8px solid #C0C0C0;
+
+    .subscription-plan-card__badge {
+        color: #4B5563;
+        background-color: #e5e7eb;
+    }
+}
+
+.gold {
+    border-left: 8px solid #FFD700;
+
+    .subscription-plan-card__badge {
+        color: #A16207;
+        background-color: #FEF9C3;
+    }
+}
+
+.platinum {
+    border-left: 8px solid #E5E4E2;
+
+    .subscription-plan-card__badge {
+        color: #4338CA;
+        background-color: #E0E7FF;
+    }
+}
+
+// Placeholder styles
+.placeholder {
+    border-left: 8px solid #E5E7EB;
+    opacity: 0.7;
+
+    .subscription-plan-card__name-placeholder {
+        width: 60%;
+        height: 2rem;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 0.4rem;
+    }
+
+    .subscription-plan-card__badge-placeholder {
+        width: 6rem;
+        height: 2.5rem;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 3rem;
+    }
+
+    .subscription-plan-card__tax-price-placeholder {
+        width: 40%;
+        height: 1.45rem;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 0.3rem;
+    }
+
+    .subscription-plan-card__prices-placeholder {
+        margin-top: 1.6rem;
+        position: relative;
+
+        .subscription-plan-card__discounted-price-placeholder {
+            width: 50%;
+            height: 2.6rem;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 0.4rem;
+        }
+
+        .subscription-plan-card__original-price-placeholder {
+            position: absolute;
+            top: -0.6rem;
+            left: 160px;
+            width: 3rem;
+            height: 1.25rem;
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            border-radius: 0.3rem;
+        }
+    }
+
+    .subscription-plan-card__duration-placeholder {
+        width: 70%;
+        height: 1.35rem;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 0.3rem;
+        margin-top: 1.5rem;
+    }
+
+    .subscription-plan-card__text-box-placeholder {
+        width: 100%;
+        height: 8rem;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 0.8rem;
+        margin-top: 1.4rem;
+    }
+
+    .subscription-plan-card__subscribe-btn-placeholder {
+        width: 100%;
+        height: 5.4rem;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 0.8rem;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}

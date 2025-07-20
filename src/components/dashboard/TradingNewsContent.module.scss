@@ -1,0 +1,6 @@
+.trading-news__list {
+    margin-top: clamp(1.8rem, 1.7vw, 3rem);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.3rem;
+}

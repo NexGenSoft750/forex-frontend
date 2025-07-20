@@ -1,0 +1,87 @@
+.trading-news-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 1.7rem;
+
+    .trading-news-card__header {
+        .trading-news-card__img-wrapper {
+            position: relative;
+            height: 18rem;
+            border-radius: 1.4rem;
+            overflow: hidden;
+
+            .trading-news-card__img {
+                object-fit: cover;
+            }
+        }
+
+        .trading-news-card__author-name {
+            display: block;
+            margin-top: 1.7rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+
+    .trading-news-card__body {
+        margin-top: 1.5rem;
+
+        .trading-news-card__title {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+
+    .trading-news-card__footer {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .trading-news-card__stats {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            .views-box {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                .views-box__count {
+                    color: #6B7280;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .comment-box {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                .comment-box__count {
+                    color: #6B7280;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .actions-icon {
+            .actions-icon__img {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.forexNEWS {
+    color: #3B82F6 !important;
+}
+
+.forexMONEY {
+    color: #22C55E !important;
+}
+
+.Starstriker {
+    color: #EF4444 !important;
+}

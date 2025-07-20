@@ -2,12 +2,11 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { useLanguage } from '../LanguageProvider';
+import Link from 'next/link';
 import styles from './Footer.module.scss';
 
 export function Footer() {
     const t = useTranslations('footer');
-    const { currentLanguage } = useLanguage();
 
     return (
         <footer className={styles.footer}>
@@ -22,10 +21,10 @@ export function Footer() {
                 <div className={styles.footerSection}>
                     <h4 className={styles.footerTitle}>{t('quickLinks')}</h4>
                     <ul className={styles.footerLinks}>
-                        <li><a href={`/${currentLanguage}`}>{t('home')}</a></li>
-                        <li><a href={`/${currentLanguage}/about`}>{t('aboutUs')}</a></li>
-                        <li><a href={`/${currentLanguage}`}>{t('packages')}</a></li>
-                        <li><a href={`/${currentLanguage}`}>{t('forum')}</a></li>
+                        <li><Link href="/">{t('home')}</Link></li>
+                        <li><Link href="/about">{t('aboutUs')}</Link></li>
+                        <li><Link href="/dashboard">{t('packages')}</Link></li>
+                        <li><Link href="/">{t('forum')}</Link></li>
                     </ul>
                 </div>
 

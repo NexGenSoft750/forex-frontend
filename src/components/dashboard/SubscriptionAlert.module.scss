@@ -1,0 +1,38 @@
+.subscription-alert {
+    flex-grow: 1;
+    background-color: #DCFCE7;
+    border: 1px solid #BBF7D0;
+    height: auto;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2.2rem;
+
+    .subscription-alert__container {
+        .subscription-alert__user-name {
+            color: #166534;
+            font-weight: bolder;
+            margin-bottom: .9rem;
+        }
+
+        .subscription-alert__message {
+            color: #15803D;
+            font-size: 1.6rem;
+        }
+
+        .subscription-alert__separator {
+            border: 1px solid #86efad98;
+            margin: 1.8rem 0;
+        }
+
+        .subscription-alert__info-message {
+            color: #16A34A;
+            font-size: 1.5rem;
+            margin-bottom: .9rem;
+
+            .subscription-alert__label {
+                font-weight: 700;
+            }
+        }
+    }
+}
