@@ -1,4 +1,5 @@
 import styles from './PackagesCard.module.scss';
+import { PackagesCardProps } from '../../types/PackagesCardProps';
 
 export default function PackagesCard(packagesCard: PackagesCardProps) {
     return (

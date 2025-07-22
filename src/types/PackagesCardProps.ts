@@ -1,4 +1,4 @@
-type PackagesCardProps = {
+export type PackagesCardProps = {
     id: number;
     planType: string;
     displayName: string;
