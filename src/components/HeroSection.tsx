@@ -1,19 +1,22 @@
-import { HeroSectionContentText } from './HeroSectionContentText';
 import styles from './HeroSection.module.scss';
 import { HeroSectionAsideNav } from './HeroSectionAsideNav';
-import { HeroSectionContentSecondaryText } from './HeroSectionContentSecondaryText';
 
-export function HeroSection() {
+type HeroSectionProps = {
+    children: React.ReactNode;
+}
+
+export function HeroSection({
+    children,
+}: HeroSectionProps) {
     return (
         <section>
             <div className={styles.heroSection}>
                 <aside className={styles.heroSectionAside}>
                     <HeroSectionAsideNav />
                 </aside>
-                <section className={styles.heroSectionContent}>
-                    <HeroSectionContentText />
-                    <HeroSectionContentSecondaryText />
-                </section>
+                <div className={styles.heroSectionContent}>
+                    {children}
+                </div>
             </div>
         </section>
     )

@@ -1,3 +1,5 @@
+import { Footer } from '@/components/layouts/Footer';
+import { Header } from '@/components/layouts/Header';
 import '@/styles/globals.scss';
 
 interface MainLayoutProps {
@@ -9,7 +11,9 @@ export default function MainLayout({
 }: MainLayoutProps) {
     return (
         <>
+            <Header />
             {children}
+            <Footer />
         </>
     );
 } 

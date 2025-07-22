@@ -1,9 +1,11 @@
 .heroSection {
     display: flex;
+    align-items: center;
     margin-top: 25px;
+    gap: 55px;
 
     .heroSectionAside {
-        width: 15%;
+        width: 15vw;
     }
 
     .heroSectionContent {

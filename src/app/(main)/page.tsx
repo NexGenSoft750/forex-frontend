@@ -1,8 +1,5 @@
 "use client";
 
-import { HeroSection } from '@/components/HeroSection';
-import { Header } from '@/components/layouts/Header';
-import { Footer } from '@/components/layouts/Footer';
 import { FundamentalAnalysisSection } from '@/components/FundamentalAnalysisSection';
 import { FundamentalEdgeInsight } from '@/components/insights/FundamentalEdgeInsight';
 import { FundmentalHeatmap } from '@/components/insights/FundamentalHetmap';
@@ -14,13 +11,18 @@ import { TechnicalIndicatorsSection } from '@/components/insights/TechnicalIndic
 import { EducationSection } from '@/components/education/EducationSection';
 import TechnicalHeatmap from '@/components/insights/TechnicalHeatmap';
 import { CurrencyStrengthMeter } from '@/components/insights/CurrencyStrengthMeter';
+import PageWithHeroLayout from '@/components/layouts/PageWithHeroLayout';
+import { HeroSectionContentText } from '@/components/HeroSectionContentText';
+import { HeroSectionContentSecondaryText } from '@/components/HeroSectionContentSecondaryText';
 
 export default function Home() {
     return (
         <>
-            <Header />
             <main>
-                <HeroSection />
+                <PageWithHeroLayout>
+                    <HeroSectionContentText />
+                    <HeroSectionContentSecondaryText />
+                </PageWithHeroLayout>
                 <FundamentalAnalysisSection />
                 <FundamentalEdgeInsight />
                 <FundmentalHeatmap />
@@ -33,7 +35,6 @@ export default function Home() {
                 <TechnicalHeatmap />
                 <CurrencyStrengthMeter />
             </main>
-            <Footer />
         </>
     );
 } 

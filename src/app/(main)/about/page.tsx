@@ -1,7 +1,5 @@
 "use client";
 
-import { Header } from '@/components/layouts/Header';
-import { Footer } from '@/components/layouts/Footer';
 import { useTranslations } from 'next-intl';
 import styles from './about.module.scss';
 
@@ -10,7 +8,6 @@ export default function About() {
 
     return (
         <>
-            <Header />
             <main className={styles.aboutMain}>
                 <section className={styles.aboutHero}>
                     <div className={styles.aboutHeroContent}>
@@ -70,7 +67,6 @@ export default function About() {
                     </div>
                 </section>
             </main>
-            <Footer />
         </>
     );
 } 
