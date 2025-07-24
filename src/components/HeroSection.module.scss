@@ -1,14 +1,22 @@
 .heroSection {
     display: flex;
-    align-items: center;
     margin-top: 25px;
     gap: 55px;
+    position: relative;
 
     .heroSectionAside {
         width: 15vw;
+        height: fit-content;
+        align-self: flex-start;
+
+        &.heroSectionAsideSticky {
+            position: sticky;
+            top: 25px;
+        }
     }
 
     .heroSectionContent {
         width: 85%;
+        flex: 1;
     }
 }

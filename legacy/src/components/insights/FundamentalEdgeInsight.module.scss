@@ -1,0 +1,151 @@
+@import "../../styles/mixins.scss";
+
+.fundamentalEdgeInsight {
+    margin-top: 8rem;
+
+    @include tablet {
+        margin-top: 6rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+    }
+
+    .fundamentalEdgeInsightContainer {
+        display: flex;
+        justify-content: center;
+        gap: 4.5rem;
+        align-items: stretch;
+        min-height: 50rem;
+
+        @include tablet {
+            flex-direction: column;
+            gap: 3rem;
+            min-height: auto;
+        }
+
+        @include mobile {
+            gap: 2rem;
+        }
+
+        .fundamentalEdgeInsightContent {
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+
+            @include tablet {
+                width: 100%;
+            }
+
+            .fundamentalEdgeInsightHeader {
+                .fundamentalEdgeInsightHeaderTitle {
+                    text-align: center;
+                    width: 100%;
+                    border: 0.3rem solid #01F595;
+                    padding: 1.2rem 2.2rem;
+                    border-radius: 0.5rem;
+
+                    @include mobile {
+                        padding: 1rem 1.5rem;
+                    }
+
+                    h1 {
+                        color: #01F595;
+                        font-size: 3.5rem;
+                        font-weight: 600;
+
+                        @include tablet {
+                            font-size: 2.8rem;
+                        }
+
+                        @include mobile {
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+
+                .fundamentalEdgeInsightPrimaryDescription {
+                    font-size: 1.6rem;
+                    line-height: 2.7rem;
+                    text-align: center;
+                    margin-top: 4.5rem;
+
+                    @include tablet {
+                        margin-top: 3rem;
+                        font-size: 1.5rem;
+                        line-height: 2.4rem;
+                    }
+
+                    @include mobile {
+                        margin-top: 2rem;
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+
+            .fundamentalEdgeInsightFooter {
+                margin-top: 4.5rem;
+                flex-grow: 1;
+
+                @include tablet {
+                    margin-top: 3rem;
+                }
+
+                @include mobile {
+                    margin-top: 2rem;
+                }
+
+                .fundamentalEdgeInsightFooterCard {
+                    border-radius: 0.5rem;
+                    text-align: center;
+                    line-height: 2.7rem;
+                    padding: 8rem 1.2rem;
+                    border: 0.3rem solid #01F595;
+                    height: 100%;
+                    font-size: 1.6rem;
+
+                    @include tablet {
+                        padding: 4rem 1.2rem;
+                        font-size: 1.5rem;
+                        line-height: 2.4rem;
+                    }
+
+                    @include mobile {
+                        padding: 3rem 1rem;
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+        }
+
+        .fundamentalEdgeInsightImageContainer {
+            width: 66%;
+            border: 0.3rem solid #01F595;
+            border-radius: 0.5rem;
+            line-height: 2.6rem;
+            display: flex;
+
+            @include tablet {
+                width: 100%;
+                min-height: 40rem;
+            }
+
+            @include mobile {
+                min-height: 30rem;
+            }
+
+            .fundamentalEdgeInsightImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
+.highlightedText {
+    color: #01F595;
+}

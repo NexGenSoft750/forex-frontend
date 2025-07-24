@@ -1,0 +1,111 @@
+.single-forum-post-card {
+    &__heading {
+        background: #dc2626;
+        color: #ffffff;
+        padding: 8px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        transform: skew(-20deg);
+        border: 1px solid #FFFFFF;
+
+        span {
+            display: inline-block;
+            transform: skew(20deg);
+        }
+    }
+
+    &__content-wrapper {
+        width: calc(100% - 1.5px);
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-top: 4px solid #9e0000;
+        margin-left: -7px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__content {
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        padding: 15px 30px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__title {
+        color: #4D44B5 !important;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__date {
+        color: #0AA1FF !important;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__replies {
+        color: #EE0000 !important;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__body {
+        margin-top: 20px;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        height: 300px;
+    }
+
+    &__image {
+        object-fit: cover;
+    }
+
+    &__summary {
+        margin-top: 15px;
+        color: #696262 !important;
+        font-size: 14px;
+        line-height: 1.7;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__footer {
+        margin-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        background-color: #E7003E;
+        border: none;
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        padding: 7px 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__button:first-of-type {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}

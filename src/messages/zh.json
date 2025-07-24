@@ -309,6 +309,13 @@
         "phone": "电话",
         "allRightsReserved": "版权所有。"
     },
+    "forum": {
+        "commentModal": {
+            "title": "评论！",
+            "placeholder": "描述您的评论",
+            "save": "保存"
+        }
+    },
     "about": {
         "title": "关于我们",
         "subtitle": "通过全面的市场洞察和专业交易工具赋能交易者",

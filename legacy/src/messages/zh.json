@@ -1,0 +1,299 @@
+{
+    "navigation": {
+        "home": "首页",
+        "aboutUs": "关于我们",
+        "packages": "套餐",
+        "forum": "论坛",
+        "dashboard": "仪表板",
+        "trades": "交易",
+        "settings": "设置",
+        "profile": "个人资料"
+    },
+    "common": {
+        "loading": "加载中...",
+        "error": "错误",
+        "success": "成功",
+        "save": "保存",
+        "cancel": "取消",
+        "delete": "删除",
+        "edit": "编辑",
+        "submit": "提交"
+    },
+    "auth": {
+        "login": "登录",
+        "logout": "退出",
+        "signup": "注册",
+        "email": "电子邮件",
+        "password": "密码",
+        "loginTitle": "登录",
+        "loginSubtitle": "登录访问您的账户",
+        "emailPlaceholder": "电子邮件 / 手机号码",
+        "passwordPlaceholder": "密码",
+        "rememberMe": "记住我",
+        "noAccount": "还没有账户？",
+        "orLoginWith": "或通过以下方式登录",
+        "hidePassword": "隐藏密码",
+        "showPassword": "显示密码",
+        "signupLink": "注册",
+        "signupTitle": "注册",
+        "signupSubtitle": "您可以访问您的个人账户",
+        "firstName": "名字",
+        "lastName": "姓氏",
+        "gender": "性别",
+        "genderOptions": {
+            "placeholder": "性别",
+            "male": "男",
+            "female": "女",
+            "other": "其他"
+        },
+        "confirmPassword": "确认密码",
+        "passwordsDoNotMatch": "密码不匹配",
+        "referralCode": "输入推荐码",
+        "hasAccount": "已有账户？",
+        "loginLink": "登录"
+    },
+    "trading": {
+        "buy": "买入",
+        "sell": "卖出",
+        "amount": "数量",
+        "price": "价格",
+        "total": "总计",
+        "openPositions": "持仓",
+        "tradeHistory": "交易历史"
+    },
+    "settings": {
+        "language": "语言",
+        "theme": "主题",
+        "notifications": "通知",
+        "security": "安全"
+    },
+    "hero": {
+        "welcome": "欢迎",
+        "to": "来到",
+        "brandName": " Forex Fundamental Edge ",
+        "yourGateway": "您的通道",
+        "smartTrading": "智能外汇交易",
+        "secondaryText": {
+            "before": "在瞬息万变的",
+            "highlight1": "外汇交易",
+            "between1": "世界中，拥有扎实的知识基础是成功的关键。在",
+            "highlight2": " Forex Fundamental Edge ",
+            "between2": "，我们致力于为像您这样的交易者提供",
+            "highlight3": "见解和工具",
+            "between3": "，帮助您在",
+            "highlight4": "货币市场",
+            "after": "中做出明智的决策。"
+        }
+    },
+    "fundamentalAnalysis": {
+        "title": "基本面分析",
+        "description": "在 Forex Fundamental Edge 中，基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行动的情境因素。简单来说，我们经常认为他人的行为方式是由于他们的本性，而不是由于他们无法控制的环境因素。",
+        "cotButton": "COT",
+        "menuItems": {
+            "fundamentalBias": "基本面偏差",
+            "scoreBoard": "评分板",
+            "cotReport": "COT报告",
+            "seasonality": "季节性",
+            "retailSentiment": "零售情绪",
+            "riskMode": "风险模式",
+            "education": "教育"
+        }
+    },
+    "technicalAnalysis": {
+        "title": "技术分析",
+        "description": "外汇交易中的技术分析包括研究价格图表和使用统计指标来确定未来货币价格走势。"
+    },
+    "marketOverview": {
+        "title": "市场概览",
+        "latestUpdates": "最新更新",
+        "viewAll": "查看全部"
+    },
+    "newsEvents": {
+        "title": "新闻与事件",
+        "upcoming": "即将发生的事件",
+        "past": "过去的事件"
+    },
+    "asideNav": {
+        "fundamentalHeatmap": "基本面热图",
+        "currencyFundamentals": "货币基本面",
+        "scoreBoard": "评分板",
+        "cotReport": "COT报告",
+        "seasonality": "季节性",
+        "eventsCalendar": "事件日历",
+        "retailSentiment": "零售情绪",
+        "calculator": "计算器",
+        "tradingAlerts": "交易提醒",
+        "education": "教育",
+        "tradingJournal": "交易日志",
+        "riskMode": "风险模式"
+    },
+    "languages": {
+        "en": "English",
+        "ru": "Русский",
+        "zh": "中文",
+        "es": "Español"
+    },
+    "welcome": {
+        "title": "欢迎来到",
+        "brandName": "Forex Fundamental Edge",
+        "gateway": "您的通道",
+        "smartTrading": "智能外汇交易"
+    },
+    "insights": {
+        "technical": {
+            "cotButton": "COT",
+            "cotButtonAriaLabel": "COT 分析",
+            "description": {
+                "before": "在",
+                "highlight": "Forex Fundamental Edge",
+                "content": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+            },
+            "chartAltText": "技术分析图表"
+        },
+        "market": {
+            "title": "市场概览",
+            "latestUpdates": "最新更新",
+            "viewAll": "查看全部",
+            "chartAltText": "市场概览图表",
+            "description": {
+                "before": "在",
+                "highlight": " Forex Fundamental Edge ",
+                "content": "，我们提供全面的市场分析，帮助交易者理解全球货币走势并做出明智的交易决策。我们的市场概览结合了技术指标、基本面数据和实时市场情绪，为您提供当前市场状况的完整图景。"
+            }
+        },
+        "news": {
+            "title": "新闻与事件",
+            "upcoming": "即将发生的事件",
+            "past": "过去的事件",
+            "readMore": "阅读更多",
+            "viewAll": "查看全部",
+            "description": {
+                "before": "在",
+                "highlight": " Forex Fundamental Edge ",
+                "content": "，我们为您带来影响货币交易的最新市场动态和事件。通过我们精心筛选的重要财经新闻、经济指标和来自全球可信来源的市场分析，随时掌握市场动向。"
+            }
+        },
+        "fundamental": {
+            "title": "基本面分析",
+            "heatmapTitle": "基本面热图",
+            "currencyTitle": "货币基本面",
+            "edgeTitle": "基本面优势",
+            "description": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征。",
+            "chartAltText": "基本面分析图表"
+        },
+        "fundamentalEdge": {
+            "title": "基本面优势",
+            "primaryDescription": {
+                "before": "在",
+                "highlight": " Forex Fundamental Edge ",
+                "after": "，我们提供全面的工具和见解来提升您的交易策略"
+            },
+            "secondaryDescription": {
+                "before": "在",
+                "highlight": " Forex Fundamental Edge ",
+                "content": "，基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+            },
+            "imageAlt": "基本面优势分析"
+        },
+        "fundamentalHeatmap": {
+            "title": "基本面热图",
+            "primaryDescription": {
+                "before": "我们提供基于关键经济指标的主要货币详细",
+                "highlight": "强度评估",
+                "after": "分析"
+            },
+            "secondaryDescription": {
+                "before": "在",
+                "highlight": " Forex Fundamental Edge ",
+                "content": "，基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行动的情境因素。简单来说，我们经常认为他人的行为方式是由于他们的本性，而不是由于他们无法控制的环境因素。"
+            },
+            "imageAlt": "基本面热图分析"
+        },
+        "currencyFundamental": {
+            "title": "货币基本面分析",
+            "primaryDescription": {
+                "before": "我们提供强度",
+                "highlight": "指标和分析",
+                "after": "基于关键经济指标"
+            },
+            "secondaryDescription": {
+                "before": "在",
+                "highlight": " Forex Fundamental Edge ",
+                "content": "，基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+            },
+            "imageAlt": "货币基本面分析"
+        },
+        "technicalIndicators": {
+            "tabs": {
+                "riskMode": {
+                    "risk": "风险",
+                    "mode": "模式"
+                },
+                "retailPositions": {
+                    "retails": "零售",
+                    "positions": "持仓"
+                }
+            },
+            "cards": {
+                "riskOnOff": {
+                    "title": "风险开/关",
+                    "altText": "风险开关指标",
+                    "description": {
+                        "before": "在",
+                        "highlight": "Forex Fundamental Edge",
+                        "content": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+                    }
+                },
+                "retailPositions": {
+                    "title": "零售持仓",
+                    "chartAltText": "零售持仓图表",
+                    "description": {
+                        "before": "在",
+                        "highlight": "Forex Fundamental Edge",
+                        "content": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+                    }
+                }
+            }
+        },
+        "education": {
+            "title": "教育",
+            "shortDescription": {
+                "before": "这是我们关于",
+                "highlight1": "有效交易",
+                "between": "",
+                "highlight2": "基本面的建议",
+                "after": "："
+            },
+            "footerDescription": {
+                "before": "在",
+                "highlight": "Forex Fundamental Edge",
+                "content": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+            }
+        },
+        "technicalHeatmap": {
+            "title": "技术",
+            "titleHighlight": "热图",
+            "shortDescription": {
+                "before": "热图帮助",
+                "highlight": "精确定位需求",
+                "after": "一目了然地调整："
+            },
+            "description": {
+                "before": "在",
+                "highlight": "Forex Fundamental Edge",
+                "content": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+            },
+            "imageAlt": "技术热图"
+        },
+        "currencyStrengthMeter": {
+            "title": "货币",
+            "titleHighlight": "强度仪",
+            "description": {
+                "before": "在",
+                "highlight": "Forex Fundamental Edge",
+                "content": "基本归因错误是一种认知偏差，人们在解释他人行为时倾向于过分强调个性特征，而低估可能影响其行为的情境因素。简单来说，我们经常认为他人的行为是由于他们的性格，而不是由于他们无法控制的环境因素。"
+            },
+            "imageAlt": "货币强度仪"
+        }
+    }
+}

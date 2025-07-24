@@ -1,0 +1,90 @@
+.seasonalityHeader {
+    display: flex;
+    width: fit-content;
+    height: 68px;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border-radius: 8.8px;
+    border: 3.08px solid #009d47;
+    background: transparent;
+    margin-top: 80px;
+    padding: 12px 22px;
+}
+
+.seasonalityHeaderTitle {
+    color: #009d47;
+    font-size: 32px;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -6.18px;
+    margin-bottom: -0.02px;
+}
+
+.seasonalityCard {
+    background: #000;
+    border-radius: 100px 0 100px 0;
+    border: 4px solid #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.seasonalityCardContent {
+    width: 35%;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 16.9px;
+    font-weight: 500;
+    text-align: center;
+    color: transparent;
+    letter-spacing: 0;
+    line-height: 16.9px;
+    padding: 12px;
+}
+
+.seasonalityCardContent p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.seasonalityCardContent .highlight {
+    color: #01f595;
+}
+
+.seasonalityChartImgContainer {
+    width: 65%;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    padding: 35px 35px 35px 0;
+}
+
+.seasonalityChartImgOuterLayer {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border: 1px solid #B5A7A7;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.seasonalityChartImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seasonalityChartImgOuterLayer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    pointer-events: none;
+    z-index: 2;
+}

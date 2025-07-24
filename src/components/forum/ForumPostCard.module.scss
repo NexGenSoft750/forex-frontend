@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+.forum-post-card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+
+    &__image_wrapper {
+        border-radius: 10px;
+    }
+
+    &__image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &__replies {
+        color: #EE0000 !important;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__content__header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__title {
+        color: #4D44B5 !important;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__date {
+        color: #0AA1FF !important;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__summary {
+        color: #8B8484 !important;
+        font-size: 13px;
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+
+        a {
+            color: #3b82f6;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__read-more {
+        color: #0AA1FF !important;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none !important;
+    }
+}

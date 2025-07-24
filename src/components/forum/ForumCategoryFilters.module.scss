@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+.forum-category-filters {
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+
+    &__hint {
+        margin-bottom: 15px;
+        text-align: center;
+
+        span {
+            color: #6E6E6E;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    &__button {
+        background: #6E6E6E;
+        border: 1px solid #FFFFFF;
+        color: white;
+        padding: 6px 12px;
+        font-size: 14.5px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 200px;
+        transform: skew(-24deg);
+        transition: all 0.3s ease;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+
+        &--active {
+            background: #dc2626;
+            color: white;
+
+            &:hover {
+                background: #dc2626;
+            }
+        }
+
+        span {
+            display: inline-block;
+            transform: skew(24deg);
+        }
+    }
+}

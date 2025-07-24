@@ -1,0 +1,37 @@
+.forumSlugPage {
+    margin-top: 25px;
+}
+
+.forumSlugPageContainer {
+    display: flex;
+    gap: 55px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.forumSlugPageAside {
+    width: 15vw;
+    flex-shrink: 0;
+}
+
+.forumSlugPageContent {
+    width: 85%;
+    flex: 1;
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .forumSlugPageContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .forumSlugPageAside {
+        width: 100%;
+    }
+
+    .forumSlugPageContent {
+        width: 100%;
+    }
+}

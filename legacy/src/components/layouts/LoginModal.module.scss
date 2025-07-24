@@ -1,0 +1,247 @@
+// Login Modal Component Styles
+.modalDialog {
+  max-width: 62rem !important;
+  margin: 1rem auto !important;
+}
+
+.modalOverlay {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 100vh !important;
+  padding: 1rem !important;
+}
+
+.modalContent {
+  background-color: #F3F3F3 !important;
+  border-radius: 2rem !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2) !important;
+  padding: 2.5rem !important;
+  min-height: 60rem !important;
+  border: none !important;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 62rem !important;
+  margin: 0 auto !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+}
+
+.modalHeader {
+  text-align: center !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  color: black !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2rem !important;
+  margin-bottom: 0.8rem !important;
+  padding: 0 !important;
+  border: none !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+}
+
+.modalSubtitle {
+  text-align: center !important;
+  font-size: 0.85rem !important;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 2.5rem !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+}
+
+.closeButton {
+  position: absolute !important;
+  right: 2rem !important;
+  top: 2rem !important;
+  background-color: black !important;
+  color: white !important;
+  border-radius: 50% !important;
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  border: none !important;
+  font-size: 1.4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 1000 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+
+  &:hover {
+    background-color: #333 !important;
+    color: white !important;
+  }
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formInput {
+  background-color: white !important;
+  border: 0.2rem solid black !important;
+  border-radius: 0.5rem !important;
+  height: 4.7rem !important;
+  font-size: 1.6rem !important;
+  color: black !important;
+  width: 100% !important;
+  padding: 0 1.5rem !important;
+  box-sizing: border-box !important;
+
+  &::placeholder {
+    color: black !important;
+  }
+
+  &:focus {
+    border-color: black !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.formCheckInput input {
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+.passwordInputGroup {
+  position: relative !important;
+}
+
+.passwordToggle {
+  position: absolute !important;
+  right: 1.5rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  background: none !important;
+  border: none !important;
+  color: black !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  padding: 0.5rem !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+}
+
+.checkboxGroup {
+  display: flex !important;
+  align-items: center !important;
+  margin-bottom: 1.5rem !important;
+  justify-content: flex-start !important;
+
+  .checkboxLabel {
+    font-size: 1.2rem !important;
+    color: black !important;
+    margin-left: 0.7rem !important;
+    margin-bottom: -0.7rem !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+  }
+}
+
+.loginButton {
+  width: 100% !important;
+  background-color: black !important;
+  color: white !important;
+  height: 5.5rem !important;
+  border-radius: 0.6rem !important;
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1rem !important;
+  border: none !important;
+  margin-bottom: 1.1rem !important;
+  cursor: pointer !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+
+  &:hover {
+    background-color: #333 !important;
+    color: white !important;
+  }
+
+  &:disabled {
+    opacity: 0.6 !important;
+    cursor: not-allowed !important;
+    background-color: black !important;
+  }
+}
+
+.signupLink {
+  font-size: 1.4rem !important;
+  color: #717171 !important;
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+
+  a {
+    color: black !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+  }
+}
+
+.dividerContainer {
+  display: flex !important;
+  align-items: center !important;
+  margin: 2rem 0 !important;
+  width: 100% !important;
+
+  .dividerLine {
+    flex: 1 !important;
+    height: 0.1rem !important;
+    background-color: #ccc !important;
+  }
+
+  .dividerText {
+    font-size: 1.5rem !important;
+    color: #000000 !important;
+    padding: 0 1rem !important;
+    white-space: nowrap !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+  }
+}
+
+.socialButtons {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+
+  .socialButton {
+    flex: 1 1 0;
+    width: 10rem !important;
+    height: 5.5rem !important;
+    border: 0.1rem solid #000 !important;
+    border-radius: 0.8rem !important;
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 2.4rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05) !important;
+    }
+
+    &.google {
+      color: inherit !important;
+    }
+  }
+}
+
+.triggerButton {
+  background-color: black !important;
+  color: white !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  border-radius: 0.6rem !important;
+  padding: 1rem 2rem !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+
+  &:hover {
+    background-color: #333 !important;
+    color: white !important;
+  }
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+.forum-replies-section {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+
+    &__container {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    &__column {
+        padding: 20px;
+    }
+
+    &__title {
+        background: #dc2626;
+        color: #ffffff;
+        padding: 8px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        transform: skew(-20deg);
+        border: 1px solid #FFFFFF;
+
+        span {
+            display: inline-block;
+            transform: skew(20deg);
+        }
+    }
+
+    &__list {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: calc(100% - 1.5px);
+        border-top: 4px solid #9e0000;
+        margin-left: -7px;
+        padding: 15px;
+    }
+}
+
+.forum-reply-card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+
+    &:hover {
+        background-color: #e8e8e8;
+    }
+
+    &__avatar-wrapper {
+        flex-shrink: 0;
+    }
+
+    &__avatar {
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    &__username-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        border-bottom: 1px solid #828193;
+    }
+
+    &__username {
+        color: #828193 !important;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        margin-bottom: -5px;
+        cursor: pointer;
+    }
+
+    &__username-replied {
+        color: #828193 !important;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: -5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__timestamp {
+        color: #0AA1FF !important;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 4px;
+    }
+
+    &__reply-content {
+        color: #8B8484 !important;
+        font-size: 12px;
+        line-height: 1.3;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        display: inline;
+
+        a {
+            color: #3b82f6;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__read-more {
+        color: #0AA1FF !important;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none !important;
+    }
+
+    &__related-link {
+        display: inline;
+
+        a {
+            color: #0AA1FF !important;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: underline;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+        }
+    }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+    .forum-replies-section {
+        &__container {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+}

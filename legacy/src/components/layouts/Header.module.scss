@@ -1,0 +1,156 @@
+@import "../../styles/mixins.scss";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    @include mobile {
+        padding: 1.5rem 0;
+    }
+}
+
+.headerLogo {
+    font-size: 2.4rem;
+    font-weight: bold;
+
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex: 0 0 auto;
+
+    @include mobile {
+        gap: 1.5rem;
+    }
+}
+
+.loginBtn {
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid white;
+    padding: 0.8rem 3rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    @include touch-target;
+
+    @include mobile {
+        font-size: 1.4rem;
+        padding: 0.8rem 2rem;
+    }
+
+    &:hover {
+        @media (min-width: #{$tablet + 1px}) {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+/* New Menu Toggle Button Styles */
+.menuToggle {
+    display: none; // Hidden on desktop
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1100; // Ensure it's on top
+
+    @include tablet {
+        display: block; // Visible on tablet and mobile
+    }
+}
+
+.languageDropdown {
+    min-width: 18rem; // Restore original 180px
+    display: flex;
+    justify-content: flex-end;
+
+    @include mobile {
+        min-width: 15rem;
+    }
+
+    :global {
+        .dropdown-toggle {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            color: #fff !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+            font-size: 1.6rem !important; // Restore original size
+
+            &::after {
+                display: none !important;
+            }
+        }
+
+        .dropdown-menu {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            min-width: 18rem !important; // Restore original 180px
+            padding: 0.8rem !important; // Restore original 8px
+            margin-top: 0.8rem !important; // Restore original 8px
+            font-size: 1.6rem !important; // Reset font size
+
+            @include mobile {
+                min-width: 15rem !important;
+            }
+        }
+
+        .dropdown-item {
+            color: #fff !important;
+            padding: 0.8rem 1.2rem !important; // Restore original 8px 12px
+            border-radius: 0.4rem !important; // Restore original 4px
+            width: 100%;
+            font-size: 1.6rem !important; // Reset font size
+
+            &:hover,
+            &:focus {
+                background: rgba(255, 255, 255, 0.1) !important;
+            }
+
+            &.active {
+                background: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}
+
+.languageDropdownTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.languageDropdownFlag {
+    width: 2.4rem; // Restore original 24px
+    height: 2.4rem; // Restore original 24px
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.languageDropdownItemTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    width: 100%;
+}
+
+.languageDropdownItemFlag {
+    width: 2.4rem; // Restore original 24px
+    height: 2.4rem; // Restore original 24px
+    border-radius: 50%;
+    object-fit: cover;
+}

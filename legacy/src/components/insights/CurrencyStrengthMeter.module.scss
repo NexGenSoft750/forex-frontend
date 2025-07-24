@@ -1,0 +1,137 @@
+@import "../../styles/mixins.scss";
+
+.currencyStrengthMeterSection {
+    margin-top: 8rem; // 80px
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; // 40px
+
+    @include tablet {
+        margin-top: 6rem;
+        gap: 3rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+
+    /* This is the main container with the card inside */
+    .currencyStrengthMeterContainer {
+        border-radius: 0 10rem 0 10rem; // 100px
+        border: 0.4rem solid #ffffff; // 4px
+        background-color: #000000;
+
+        @include tablet {
+            border-radius: 0 8rem 0 8rem;
+        }
+
+        @include mobile {
+            border-radius: 0 4rem 0 4rem;
+        }
+
+        .currencyStrengthMeterCard {
+            display: flex;
+            align-items: center;
+            gap: 4rem; // 40px
+            padding: 3.5rem; // 35px
+            padding-left: 2rem; // 20px
+
+            @include tablet {
+                gap: 3rem;
+                padding: 2.5rem;
+            }
+
+            @include mobile {
+                flex-direction: column-reverse;
+                /* Puts content above image */
+                padding: 2rem;
+                gap: 3rem;
+            }
+
+            .currencyStrengthMeterCardContent {
+                width: 38%;
+                text-align: center;
+                line-height: 3.3rem; // 33px
+
+                @include mobile {
+                    width: 100%;
+                    line-height: 2.8rem;
+                }
+
+                /* This header is inside the content block, as per your TSX */
+                .currencyStrengthMeterSectionHeader {
+                    .currencyStrengthMeterSectionTitle {
+                        /* Styles from your original SCSS, converted to rem */
+                        text-align: center;
+                        border: 0.3rem solid #ff0000;
+                        padding: 1.2rem 2.2rem;
+                        border-radius: 0.5rem;
+                        min-width: 30rem;
+                        margin: 0 auto 3rem;
+
+                        h1 {
+                            color: white;
+                            font-size: 3.5rem;
+                            font-weight: 600;
+
+                            span {
+                                color: #ff0000;
+                            }
+
+                            @include tablet {
+                                font-size: 3rem;
+                            }
+
+                            @include mobile {
+                                font-size: 2.8rem;
+                            }
+                        }
+                    }
+                }
+
+                .currencyStrengthMeterCardDescription {
+                    font-size: 1.6rem;
+                    /* A standard responsive size */
+                    font-weight: 500;
+                    margin-top: 2rem;
+                }
+            }
+
+            .currencyStrengthMeterCardImageWrapper {
+                width: 62%;
+                border: 0.1rem solid #ffffff;
+                border-radius: 0.5rem;
+                position: relative;
+                overflow: hidden;
+                aspect-ratio: 16/7.5;
+
+                @include mobile {
+                    width: 100%;
+                    aspect-ratio: 16/10;
+                }
+
+                .currencyStrengthMeterCardImage {
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover;
+                    border-radius: 0.5rem;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background: rgba(0, 0, 0, 0.45);
+                    pointer-events: none;
+                    z-index: 2;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.highlightedText {
+    color: #01f595;
+}

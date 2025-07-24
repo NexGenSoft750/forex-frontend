@@ -305,6 +305,13 @@
         "phone": "Teléfono",
         "allRightsReserved": "Todos los derechos reservados."
     },
+    "forum": {
+        "commentModal": {
+            "title": "¡COMENTARIO!",
+            "placeholder": "Describe tu reseña",
+            "save": "Guardar"
+        }
+    },
     "about": {
         "title": "Acerca de Nosotros",
         "subtitle": "Empoderando a los traders con análisis de mercado integral y herramientas de trading profesionales",
