@@ -1,63 +1,147 @@
+@import "../../styles/mixins.scss";
+
 .fundamentalEdgeInsight {
-    margin-top: 80px;
+    margin-top: 8rem; // 80px converted to rem
+
+    @include tablet {
+        margin-top: 6rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+    }
 
     .fundamentalEdgeInsightContainer {
         display: flex;
         justify-content: center;
-        gap: 45px;
+        gap: 4.5rem; // 45px converted to rem
         align-items: stretch;
-        min-height: 500px;
+        min-height: 50rem; // 500px converted to rem
+
+        @include tablet {
+            flex-direction: column;
+            gap: 3rem;
+            min-height: auto;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 2rem;
+            min-height: auto;
+        }
 
         .fundamentalEdgeInsightContent {
             width: 34%;
             display: flex;
             flex-direction: column;
 
+            @include tablet {
+                width: 100%;
+            }
+
+            @include mobile {
+                width: 100%;
+            }
+
             .fundamentalEdgeInsightHeader {
                 .fundamentalEdgeInsightHeaderTitle {
                     text-align: center;
                     width: 100%;
-                    border: 3px solid #01F595;
-                    padding: 12px 22px;
-                    border-radius: 5px;
+                    border: 0.3rem solid #01F595; // 3px converted to rem
+                    padding: 1.2rem 2.2rem; // 12px 22px converted to rem
+                    border-radius: 0.5rem; // 5px converted to rem
+
+                    @include mobile {
+                        padding: 1rem 1.5rem;
+                        border-width: 0.2rem;
+                    }
 
                     h1 {
                         color: #01F595;
-                        font-size: 35px;
+                        font-size: 3.5rem; // 35px converted to rem
                         font-weight: 600;
+
+                        @include tablet {
+                            font-size: 2.8rem;
+                        }
+
+                        @include mobile {
+                            font-size: 2.2rem;
+                        }
                     }
                 }
 
                 .fundamentalEdgeInsightPrimaryDescription {
-                    font-size: 16px;
-                    line-height: 27px;
+                    font-size: 1.6rem; // 16px converted to rem
+                    line-height: 2.7rem; // 27px converted to rem
                     text-align: center;
-                    margin-top: 45px;
+                    margin-top: 4.5rem; // 45px converted to rem
+
+                    @include tablet {
+                        font-size: 1.5rem;
+                        line-height: 2.4rem;
+                        margin-top: 3rem;
+                    }
+
+                    @include mobile {
+                        font-size: 1.4rem;
+                        line-height: 2.2rem;
+                        margin-top: 2rem;
+                    }
                 }
             }
 
             .fundamentalEdgeInsightFooter {
-                margin-top: 45px;
+                margin-top: 4.5rem; // 45px converted to rem
                 flex-grow: 1;
 
+                @include tablet {
+                    margin-top: 3rem;
+                }
+
+                @include mobile {
+                    margin-top: 2rem;
+                }
+
                 .fundamentalEdgeInsightFooterCard {
-                    border-radius: 5px;
+                    border-radius: 0.5rem; // 5px converted to rem
                     text-align: center;
-                    line-height: 27px;
-                    padding: 80px 12px;
-                    border: 3px solid #01F595;
+                    line-height: 2.7rem; // 27px converted to rem
+                    padding: 8rem 1.2rem; // 80px 12px converted to rem
+                    border: 0.3rem solid #01F595; // 3px converted to rem
                     height: 100%;
+
+                    @include tablet {
+                        padding: 6rem 1rem;
+                        border-width: 0.2rem;
+                    }
+
+                    @include mobile {
+                        padding: 4rem 1rem;
+                        border-width: 0.2rem;
+                        line-height: 2.4rem;
+                    }
                 }
             }
         }
 
         .fundamentalEdgeInsightImageContainer {
             width: 66%;
-            border: 3px solid #01F595;
-            border-radius: 5px;
-            line-height: 26px;
+            border: 0.3rem solid #01F595; // 3px converted to rem
+            border-radius: 0.5rem; // 5px converted to rem
+            line-height: 2.6rem; // 26px converted to rem
             display: flex;
             position: relative;
+
+            @include tablet {
+                width: 100%;
+                border-width: 0.2rem;
+            }
+
+            @include mobile {
+                width: 100%;
+                border-width: 0.2rem;
+            }
 
             .fundamentalEdgeInsightImage {
                 width: 100%;

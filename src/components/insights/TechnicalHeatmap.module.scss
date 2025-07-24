@@ -1,29 +1,73 @@
+@import "../../styles/mixins.scss";
+
 .technicalHeatmapSection {
-    margin-top: 80px;
+    margin-top: 8rem; // 80px converted to rem
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4rem; // 40px converted to rem
+
+    @include tablet {
+        margin-top: 6rem;
+        gap: 3rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
 
     .technicalHeatmapSectionHeader {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
-        /* Add a gap for spacing */
+        gap: 4rem; // 40px converted to rem
+
+        @include tablet {
+            flex-direction: column;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+        }
 
         .technicalHeatmapSectionTitle {
             text-align: center;
-            border: 3px solid #ff0000;
-            padding: 12px 22px;
-            border-radius: 5px;
-            min-width: 300px;
+            border: 0.3rem solid #ff0000; // 3px converted to rem
+            padding: 1.2rem 2.2rem; // 12px 22px converted to rem
+            border-radius: 0.5rem; // 5px converted to rem
+            min-width: 30rem; // 300px converted to rem
             flex-shrink: 0;
-            /* Add this: prevents the title from shrinking */
+
+            @include tablet {
+                min-width: auto;
+                width: 100%;
+                max-width: 40rem;
+                padding: 1rem 1.5rem;
+            }
+
+            @include mobile {
+                min-width: auto;
+                width: 100%;
+                padding: 0.8rem 1.2rem;
+                border-width: 0.2rem;
+            }
 
             h1 {
                 color: white;
-                font-size: 35px;
+                font-size: 3.5rem; // 35px converted to rem
                 font-weight: 600;
+
+                @include tablet {
+                    font-size: 2.8rem;
+                }
+
+                @include mobile {
+                    font-size: 2.2rem;
+                }
 
                 span {
                     color: #ff0000;
@@ -32,38 +76,78 @@
         }
 
         .technicalHeatmapSectionShortDescription {
-            font-size: 32px;
+            font-size: 3.2rem; // 32px converted to rem
             font-weight: 500;
             text-align: right;
-            /* Keep this for alignment */
-            /* Remove max-width, flexbox will handle it now */
+
+            @include tablet {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            @include mobile {
+                font-size: 2rem;
+                text-align: center;
+            }
         }
     }
 
     .technicalHeatmapContainer {
-        border-radius: 100px 0px 100px 0px;
-        border: 4px solid #ffffff;
+        border-radius: 10rem 0 10rem 0; // 100px converted to rem
+        border: 0.4rem solid #ffffff; // 4px converted to rem
         background-color: #000000;
-        padding: 35px;
+        padding: 3.5rem; // 35px converted to rem
+
+        @include tablet {
+            border-radius: 5rem 0 5rem 0;
+            border-width: 0.3rem;
+            padding: 2.5rem;
+        }
+
+        @include mobile {
+            border-radius: 3rem 0 3rem 0;
+            border-width: 0.2rem;
+            padding: 2rem;
+        }
 
         .technicalHeatmapCard {
             display: flex;
             align-items: center;
-            gap: 40px;
+            gap: 4rem; // 40px converted to rem
+
+            @include tablet {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            @include mobile {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
 
             .technicalHeatmapCardImageWrapper {
                 width: 65%;
-                border: 1px solid #ffffff;
-                border-radius: 5px;
+                border: 0.1rem solid #ffffff; // 1px converted to rem
+                border-radius: 0.5rem; // 5px converted to rem
                 position: relative;
                 overflow: hidden;
                 aspect-ratio: 16/6;
+
+                @include tablet {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    aspect-ratio: 16/10;
+                }
 
                 .technicalHeatmapCardImage {
                     width: 100% !important;
                     height: 100% !important;
                     object-fit: cover;
-                    border-radius: 5px;
+                    border-radius: 0.5rem; // 5px converted to rem
                 }
 
                 &::after {
@@ -73,14 +157,24 @@
                     background: rgba(0, 0, 0, 0.45);
                     pointer-events: none;
                     z-index: 2;
-                    border-radius: 5px;
+                    border-radius: 0.5rem; // 5px converted to rem
                 }
             }
 
             .technicalHeatmapCardContent {
                 width: 35%;
                 text-align: center;
-                line-height: 33px;
+                line-height: 3.3rem; // 33px converted to rem
+
+                @include tablet {
+                    width: 100%;
+                    line-height: 2.8rem;
+                }
+
+                @include mobile {
+                    width: 100%;
+                    line-height: 2.4rem;
+                }
             }
         }
     }

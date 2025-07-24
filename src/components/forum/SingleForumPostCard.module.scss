@@ -1,71 +1,146 @@
+@import "../../styles/mixins.scss";
+
 .single-forum-post-card {
     &__heading {
         background: #dc2626;
         color: #ffffff;
-        padding: 8px 20px;
-        font-size: 18px;
+        padding: 0.8rem 2rem; // 8px 20px converted to rem
+        font-size: 1.8rem; // 18px converted to rem
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
         transform: skew(-20deg);
         border: 1px solid #FFFFFF;
 
+        @include tablet {
+            font-size: 1.6rem;
+            padding: 0.6rem 1.5rem;
+        }
+
+        @include mobile {
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            transform: skew(-10deg); // Less skew on mobile
+        }
+
         span {
             display: inline-block;
             transform: skew(20deg);
+
+            @include mobile {
+                transform: skew(10deg); // Less skew on mobile
+            }
         }
     }
 
     &__content-wrapper {
         width: calc(100% - 1.5px);
         background-color: #FFFFFF;
-        padding: 20px;
+        padding: 2rem; // 20px converted to rem
         border-top: 4px solid #9e0000;
-        margin-left: -7px;
+        margin-left: -0.7rem; // -7px converted to rem
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 1.5rem; // 15px converted to rem
+
+        @include tablet {
+            padding: 1.5rem;
+            margin-left: -0.5rem;
+            gap: 1.2rem;
+        }
+
+        @include mobile {
+            padding: 1rem;
+            margin-left: 0;
+            gap: 1rem;
+        }
     }
 
     &__content {
         background-color: #f2f2f2;
-        border-radius: 10px;
-        padding: 15px 30px;
+        border-radius: 1rem; // 10px converted to rem
+        padding: 1.5rem 3rem; // 15px 30px converted to rem
+
+        @include tablet {
+            padding: 1.2rem 2rem;
+        }
+
+        @include mobile {
+            padding: 1rem;
+        }
     }
 
     &__header {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 2rem; // 20px converted to rem
+
+        @include tablet {
+            gap: 1.5rem;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
     }
 
     &__title {
         color: #4D44B5 !important;
-        font-size: 17px;
+        font-size: 1.7rem; // 17px converted to rem
         font-weight: 600;
         text-decoration: underline;
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
+        @include mobile {
+            font-size: 1.4rem;
+        }
     }
 
     &__date {
         color: #0AA1FF !important;
-        font-size: 13px;
+        font-size: 1.3rem; // 13px converted to rem
         font-family: 'Poppins', sans-serif;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 
     &__replies {
         color: #EE0000 !important;
-        font-size: 13px;
+        font-size: 1.3rem; // 13px converted to rem
         font-family: 'Poppins', sans-serif;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 
     &__body {
-        margin-top: 20px;
+        margin-top: 2rem; // 20px converted to rem
+
+        @include mobile {
+            margin-top: 1.5rem;
+        }
     }
 
     &__image-wrapper {
         position: relative;
-        height: 300px;
+        height: 30rem; // 300px converted to rem
+
+        @include tablet {
+            height: 25rem;
+        }
+
+        @include mobile {
+            height: 20rem;
+        }
     }
 
     &__image {
@@ -73,22 +148,35 @@
     }
 
     &__summary {
-        margin-top: 15px;
+        margin-top: 1.5rem; // 15px converted to rem
         color: #696262 !important;
-        font-size: 14px;
+        font-size: 1.4rem; // 14px converted to rem
         line-height: 1.7;
         font-family: 'Poppins', sans-serif;
+
+        @include mobile {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
     }
 
     &__footer {
-        margin-top: 8px;
+        margin-top: 0.8rem; // 8px converted to rem
         display: flex;
         justify-content: flex-end;
+
+        @include mobile {
+            justify-content: center;
+        }
     }
 
     &__actions {
         display: flex;
-        gap: 10px;
+        gap: 1rem; // 10px converted to rem
+
+        @include mobile {
+            gap: 0.8rem;
+        }
     }
 
     &__button {
@@ -96,16 +184,26 @@
         border: none;
         color: #FFFFFF;
         font-family: 'Poppins', sans-serif;
-        padding: 7px 10px;
-        border-radius: 5px;
+        padding: 0.7rem 1rem; // 7px 10px converted to rem
+        border-radius: 0.5rem; // 5px converted to rem
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        @include mobile {
+            padding: 0.6rem 0.8rem;
+            font-size: 1.2rem;
+        }
     }
 
     &__button:first-of-type {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 2.2rem; // 22px converted to rem
+        padding-right: 2.2rem; // 22px converted to rem
+
+        @include mobile {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
     }
 }

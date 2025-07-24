@@ -1,64 +1,125 @@
+@import "../../styles/mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 .single-forum-post-replies {
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    margin-top: 50px;
+    margin-top: 5rem; // 50px converted to rem
+
+    @include tablet {
+        margin-top: 4rem;
+    }
+
+    @include mobile {
+        margin-top: 3rem;
+    }
 
     &__replied-header {
         background: #dc2626;
         color: #ffffff;
-        padding: 8px 20px;
-        font-size: 18px;
+        padding: 0.8rem 2rem; // 8px 20px converted to rem
+        font-size: 1.8rem; // 18px converted to rem
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
         transform: skew(-20deg);
         border: 1px solid #FFFFFF;
 
+        @include tablet {
+            font-size: 1.6rem;
+            padding: 0.6rem 1.5rem;
+        }
+
+        @include mobile {
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            transform: skew(-10deg); // Less skew on mobile
+        }
+
         span {
             display: inline-block;
             transform: skew(20deg);
+
+            @include mobile {
+                transform: skew(10deg); // Less skew on mobile
+            }
         }
     }
 
     &__replied-list {
         width: calc(100% - 1.5px);
         background-color: #FFFFFF;
-        padding: 20px;
+        padding: 2rem; // 20px converted to rem
         border-top: 4px solid #9e0000;
-        margin-left: -7px;
+        margin-left: -0.7rem; // -7px converted to rem
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 1.5rem; // 15px converted to rem
+
+        @include tablet {
+            padding: 1.5rem;
+            margin-left: -0.5rem;
+            gap: 1.2rem;
+        }
+
+        @include mobile {
+            padding: 1rem;
+            margin-left: 0;
+            gap: 1rem;
+        }
     }
 
     &__no-replies {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 200px;
+        min-height: 20rem; // 200px converted to rem
         background-color: #f8f9fa;
-        border-radius: 10px;
+        border-radius: 1rem; // 10px converted to rem
         border: 2px dashed #dee2e6;
+
+        @include mobile {
+            min-height: 15rem;
+        }
     }
 
     &__no-replies-content {
         text-align: center;
-        padding: 40px 20px;
+        padding: 4rem 2rem; // 40px 20px converted to rem
+
+        @include tablet {
+            padding: 3rem 1.5rem;
+        }
+
+        @include mobile {
+            padding: 2rem 1rem;
+        }
 
         h3 {
             color: #6c757d;
-            font-size: 24px;
+            font-size: 2.4rem; // 24px converted to rem
             font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 1rem; // 10px converted to rem
             font-family: 'Poppins', sans-serif;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
+            @include mobile {
+                font-size: 1.8rem;
+            }
         }
 
         p {
             color: #868e96;
-            font-size: 16px;
-            margin-bottom: 25px;
+            font-size: 1.6rem; // 16px converted to rem
+            margin-bottom: 2.5rem; // 25px converted to rem
             font-family: 'Poppins', sans-serif;
+
+            @include mobile {
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 
@@ -67,12 +128,22 @@
         border: none;
         color: #ffffff;
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 1.6rem; // 16px converted to rem
         font-weight: 600;
-        padding: 12px 24px;
-        border-radius: 8px;
+        padding: 1.2rem 2.4rem; // 12px 24px converted to rem
+        border-radius: 0.8rem; // 8px converted to rem
         cursor: pointer;
         transition: background-color 0.3s ease;
+
+        @include tablet {
+            font-size: 1.4rem;
+            padding: 1rem 2rem;
+        }
+
+        @include mobile {
+            font-size: 1.3rem;
+            padding: 0.8rem 1.5rem;
+        }
 
         &:hover {
             background-color: #b91c1c;
@@ -84,114 +155,121 @@
     background-color: #f2f2f2;
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 20px;
-    border-radius: 10px;
+    gap: 1.5rem; // 15px converted to rem
+    padding: 2rem; // 20px converted to rem
+    border-radius: 1rem; // 10px converted to rem
     font-family: 'Poppins', sans-serif;
+
+    @include tablet {
+        gap: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
 
     &__avatar-wrapper {
         flex-shrink: 0;
+
+        @include mobile {
+            align-self: center;
+        }
     }
 
     &__avatar {
         object-fit: cover;
         border-radius: 50%;
         border: 2px solid #ffffff;
+
+        @include mobile {
+            width: 8rem !important; // Increased from 6rem to 8rem
+            height: 8rem !important; // Increased from 6rem to 8rem
+        }
     }
 
     &__content {
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 1rem; // 10px converted to rem
+
+        @include mobile {
+            gap: 0.8rem;
+            align-items: center;
+        }
     }
 
     &__header {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 1.5rem; // 15px converted to rem
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
     }
 
     &__username {
         color: #0AA1FF !important;
-        font-size: 14px;
+        font-size: 1.4rem; // 14px converted to rem
         font-weight: 600;
         font-family: 'Poppins', sans-serif;
         margin: 0;
         text-decoration: underline;
         cursor: pointer;
+
+        @include mobile {
+            font-size: 1.3rem;
+        }
     }
 
     &__timestamp {
         color: #EE0000 !important;
-        font-size: 12px;
+        font-size: 1.2rem; // 12px converted to rem
         text-decoration: underline;
         font-family: 'Poppins', sans-serif;
+
+        @include mobile {
+            font-size: 1.1rem;
+        }
     }
 
     &__reply-content {
         color: #636363 !important;
-        font-size: 13px;
+        font-size: 1.3rem; // 13px converted to rem
         line-height: 1.5;
         font-family: 'Poppins', sans-serif;
         margin: 0;
+
+        @include mobile {
+            font-size: 1.2rem;
+            text-align: center;
+        }
     }
 
     &__image-wrapper {
-        margin-top: 10px;
-        border-radius: 8px;
+        margin-top: 1rem; // 10px converted to rem
+        border-radius: 0.8rem; // 8px converted to rem
         overflow: hidden;
+
+        @include mobile {
+            margin-top: 0.8rem;
+        }
     }
 
     &__image {
         object-fit: cover;
-        border-radius: 8px;
+        border-radius: 0.8rem; // 8px converted to rem
         max-width: 100%;
         height: auto;
-    }
-}
-
-// Responsive design
-@media (max-width: 768px) {
-    .single-forum-post-replies {
-        &__no-replies-content {
-            padding: 30px 15px;
-
-            h3 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-        }
-
-        &__first-comment-button {
-            font-size: 14px;
-            padding: 10px 20px;
-        }
-    }
-
-    .single-forum-reply-card {
-        padding: 15px;
-        gap: 12px;
-
-        &__header {
-            gap: 10px;
-        }
-
-        &__username {
-            font-size: 13px;
-        }
-
-        &__timestamp {
-            font-size: 11px;
-        }
-
-        &__reply-content {
-            font-size: 12px;
-        }
     }
 }

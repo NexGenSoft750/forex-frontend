@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .technicalAnalysisSection {
     width: 100%;
     position: relative;
@@ -6,17 +8,34 @@
 .cotButton {
     display: flex;
     width: fit-content;
-    height: 68px;
+    height: 6.8rem; // 68px converted to rem
     align-items: center;
     justify-content: center;
-    gap: 22px;
-    margin-top: 80px;
-    padding: 17.6px 44px;
-    border-radius: 8.8px;
-    border: 3.08px solid #ff0000;
+    gap: 2.2rem; // 22px converted to rem
+    margin-top: 8rem; // 80px converted to rem
+    padding: 1.76rem 4.4rem; // 17.6px 44px converted to rem
+    border-radius: 0.88rem; // 8.8px converted to rem
+    border: 0.308rem solid #ff0000; // 3.08px converted to rem
     background: transparent;
     transition: background 0.2s;
     cursor: pointer;
+
+    @include tablet {
+        height: auto;
+        min-height: 5rem;
+        margin-top: 6rem;
+        padding: 1.5rem 3rem;
+        gap: 1.5rem;
+    }
+
+    @include mobile {
+        height: auto;
+        min-height: 4rem;
+        margin-top: 4rem;
+        padding: 1.2rem 2rem;
+        gap: 1rem;
+        border-width: 0.2rem;
+    }
 }
 
 .cotButton:hover {
@@ -25,24 +44,48 @@
 
 .cotButtonText {
     color: #ff0000;
-    font-size: 32px;
+    font-size: 3.2rem; // 32px converted to rem
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-weight: 600;
     text-align: center;
-    margin-top: -6.18px;
-    margin-bottom: -0.02px;
+    margin-top: -0.618rem; // -6.18px converted to rem
+    margin-bottom: -0.002rem; // -0.02px converted to rem
+
+    @include tablet {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @include mobile {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .technicalCard {
     background: #00000047;
     border: none;
     border-radius: 0;
-    margin-top: 30px;
+    margin-top: 3rem; // 30px converted to rem
     width: 100%;
-    min-height: 357px;
+    min-height: 35.7rem; // 357px converted to rem
     display: flex;
     align-items: center;
-    padding: 50px 25px;
+    padding: 5rem 2.5rem; // 50px 25px converted to rem
+
+    @include tablet {
+        margin-top: 2rem;
+        min-height: 30rem;
+        padding: 3rem 2rem;
+    }
+
+    @include mobile {
+        margin-top: 1.5rem;
+        min-height: 25rem;
+        padding: 2rem 1.5rem;
+    }
 }
 
 .technicalCardContent {
@@ -50,17 +93,39 @@
     align-items: center;
     width: 100%;
     padding: 0;
-    gap: 40px;
+    gap: 4rem; // 40px converted to rem
+
+    @include tablet {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 .technicalText {
     width: 35%;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem; // 16px converted to rem
     font-weight: 500;
     color: #fff;
-    line-height: 38px;
+    line-height: 3.8rem; // 38px converted to rem
     text-align: center;
+
+    @include tablet {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 3.2rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+    }
 }
 
 .technicalText .highlight {
@@ -71,13 +136,29 @@
     width: 65%;
     position: relative;
     overflow: hidden;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .technicalChartImg {
     width: 100%;
     height: 100%;
-    max-height: 320px;
+    max-height: 32rem; // 320px converted to rem
     object-fit: cover;
+
+    @include tablet {
+        max-height: 25rem;
+    }
+
+    @include mobile {
+        max-height: 20rem;
+    }
 }
 
 .technicalChart::after {

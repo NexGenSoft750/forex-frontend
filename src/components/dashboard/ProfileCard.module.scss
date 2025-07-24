@@ -1,6 +1,8 @@
+@import "../../styles/mixins.scss";
+
 .profile-card {
     background-color: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 1.2rem; // 12px converted to rem
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,11 +11,33 @@
     height: 100%;
     padding: 2.5rem;
 
+    @include tablet {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
     .profile-card__header {
         .profile-card__img-container {
             position: relative;
             width: 10rem;
             height: 10rem;
+
+            @include tablet {
+                width: 8rem;
+                height: 8rem;
+            }
+
+            @include mobile {
+                width: 6rem;
+                height: 6rem;
+            }
 
             .profile-card__img-wrapper {
                 width: 100%;
@@ -30,7 +54,7 @@
             .profile-card__action-wrapper {
                 position: absolute;
                 bottom: 0;
-                right: -10px;
+                right: -1rem; // -10px converted to rem
                 width: 3.5rem;
                 height: 3.5rem;
                 border-radius: 50%;
@@ -39,6 +63,18 @@
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+
+                @include tablet {
+                    width: 3rem;
+                    height: 3rem;
+                    right: -0.8rem;
+                }
+
+                @include mobile {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    right: -0.6rem;
+                }
             }
         }
     }
@@ -47,9 +83,22 @@
         margin-top: 1.8rem;
         margin-bottom: 2rem;
 
+        @include mobile {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
         .profile-card__heading {
             font-size: 2.2rem;
             font-weight: 600;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
+            @include mobile {
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -58,15 +107,27 @@
         flex-direction: column;
         gap: 1.2rem;
 
+        @include mobile {
+            gap: 1rem;
+        }
+
         .profile-card__gmail {
             display: flex;
             align-items: center;
             gap: 1.5rem;
 
+            @include mobile {
+                gap: 1.2rem;
+            }
+
             .profile-card__gmail-text {
                 font-size: 1.6rem;
                 color: #4B5563;
                 text-decoration: none;
+
+                @include mobile {
+                    font-size: 1.4rem;
+                }
             }
         }
 
@@ -75,10 +136,18 @@
             align-items: center;
             gap: 1.5rem;
 
+            @include mobile {
+                gap: 1.2rem;
+            }
+
             .profile-card__phone-text {
                 font-size: 1.6rem;
                 color: #4B5563;
                 text-decoration: none;
+
+                @include mobile {
+                    font-size: 1.4rem;
+                }
             }
         }
     }

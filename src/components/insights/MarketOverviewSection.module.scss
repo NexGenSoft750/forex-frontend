@@ -1,54 +1,124 @@
+@import "../../styles/mixins.scss";
+
 .seasonalityHeader {
     display: flex;
     width: fit-content;
-    height: 68px;
+    height: 6.8rem; // 68px converted to rem
     align-items: center;
     justify-content: center;
-    gap: 22px;
-    border-radius: 8.8px;
-    border: 3.08px solid #009d47;
+    gap: 2.2rem; // 22px converted to rem
+    border-radius: 0.88rem; // 8.8px converted to rem
+    border: 0.308rem solid #009d47; // 3.08px converted to rem
     background: transparent;
-    margin-top: 80px;
-    padding: 12px 22px;
+    margin-top: 8rem; // 80px converted to rem
+    padding: 1.2rem 2.2rem; // 12px 22px converted to rem
+
+    @include tablet {
+        height: auto;
+        min-height: 5rem;
+        margin-top: 6rem;
+        padding: 1rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    @include mobile {
+        height: auto;
+        min-height: 4rem;
+        margin-top: 4rem;
+        padding: 0.8rem 1.2rem;
+        gap: 1rem;
+        border-width: 0.2rem;
+    }
 }
 
 .seasonalityHeaderTitle {
     color: #009d47;
-    font-size: 32px;
+    font-size: 3.2rem; // 32px converted to rem
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-weight: 600;
     text-align: center;
-    margin-top: -6.18px;
-    margin-bottom: -0.02px;
+    margin-top: -0.618rem; // -6.18px converted to rem
+    margin-bottom: -0.002rem; // -0.02px converted to rem
+
+    @include tablet {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    @include mobile {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .seasonalityCard {
     background: #000;
-    border-radius: 100px 0 100px 0;
-    border: 4px solid #fff;
+    border-radius: 10rem 0 10rem 0; // 100px converted to rem
+    border: 0.4rem solid #fff; // 4px converted to rem
     overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin-top: 40px;
+    gap: 4rem; // 40px converted to rem
+    margin-top: 4rem; // 40px converted to rem
+
+    @include tablet {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+        border-width: 0.3rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        border-width: 0.2rem;
+        border-radius: 5rem 0 5rem 0;
+    }
 }
 
 .seasonalityCardContent {
     width: 35%;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 16.9px;
+    font-size: 1.69rem; // 16.9px converted to rem
     font-weight: 500;
     text-align: center;
     color: transparent;
     letter-spacing: 0;
-    line-height: 16.9px;
-    padding: 12px;
+    line-height: 1.69rem; // 16.9px converted to rem
+    padding: 1.2rem; // 12px converted to rem
+
+    @include tablet {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 1rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+        padding: 0.8rem;
+    }
 }
 
 .seasonalityCardContent p {
     color: #fff;
-    font-size: 16px;
-    line-height: 35px;
+    font-size: 1.6rem; // 16px converted to rem
+    line-height: 3.5rem; // 35px converted to rem
+
+    @include tablet {
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+    }
+
+    @include mobile {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
 }
 
 .seasonalityCardContent .highlight {
@@ -61,17 +131,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 220px;
-    padding: 35px 35px 35px 0;
+    min-height: 22rem; // 220px converted to rem
+    padding: 3.5rem 3.5rem 3.5rem 0; // 35px converted to rem
+
+    @include tablet {
+        width: 100%;
+        min-height: 18rem;
+        padding: 2rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        min-height: 15rem;
+        padding: 1.5rem;
+    }
 }
 
 .seasonalityChartImgOuterLayer {
     position: relative;
     width: 100%;
-    height: 320px;
-    border: 1px solid #B5A7A7;
-    border-radius: 13px;
+    height: 32rem; // 320px converted to rem
+    border: 0.1rem solid #B5A7A7; // 1px converted to rem
+    border-radius: 1.3rem; // 13px converted to rem
     overflow: hidden;
+
+    @include tablet {
+        height: 25rem;
+    }
+
+    @include mobile {
+        height: 20rem;
+    }
 }
 
 .seasonalityChartImg {

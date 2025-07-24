@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from 'react';
 import Header from '@/components/dashboard/Header';
 import Aside from '@/components/dashboard/Aside';
 import styles from './dashboard.module.scss';
@@ -6,12 +9,33 @@ import ProfileCard from '@/components/dashboard/ProfileCard';
 import SubscriptionAlert from '@/components/dashboard/SubscriptionAlert';
 import MembershipSubscriptionPlans from '@/components/dashboard/MembershipSubscriptionPlans';
 import TradingNews from '@/components/dashboard/TradingNews';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 export default function Dashboard() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+    };
+
     return (
         <>
             <div className={styles["dashboard"]}>
-                <Aside />
+                {/* Mobile Overlay */}
+                <div
+                    className={`${styles["sidebar-overlay"]} ${isSidebarOpen ? styles["sidebar-overlay--open"] : ""}`}
+                    onClick={closeSidebar}
+                />
+
+                {/* Sidebar */}
+                <div className={`${styles["sidebar"]} ${styles["sidebar-bg-dark"]} ${isSidebarOpen ? styles["sidebar--open"] : ""}`}>
+                    <Aside onClose={closeSidebar} />
+                </div>
+
                 <div className={styles["dashboard__panel"]}>
                     <Header
                         className={`${styles["dashboard-header"]} ${styles["dashboard-header--bg-light"]}`}
@@ -27,7 +51,16 @@ export default function Dashboard() {
                         userNameClassName={styles["dashbard-header__user-name"]}
                         userRoleClassName={styles["dashboard-header__user-role"]}
                         downArrowClassName={styles["down-arrow"]}
-                    />
+                    >
+                        {/* Mobile Hamburger Menu */}
+                        <button
+                            className={styles["mobile-menu-toggle"]}
+                            onClick={toggleSidebar}
+                            aria-label="Toggle mobile menu"
+                        >
+                            {isSidebarOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                        </button>
+                    </Header>
                     <main className={styles["dashboard__content"]}>
                         <div className={styles["dashboard__account-overview"]}>
                             <ProfileCard

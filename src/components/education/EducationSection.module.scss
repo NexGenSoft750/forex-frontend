@@ -1,79 +1,180 @@
+@import "../../styles/mixins.scss";
+
 .educationSection {
-    margin-top: 80px;
+    margin-top: 8rem; // 80px converted to rem
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2.5rem; // 25px converted to rem
+
+    @include tablet {
+        margin-top: 6rem;
+        gap: 2rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+        gap: 1.5rem;
+    }
 
     .educationSectionHeader {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
-        /* Add a gap for spacing */
+        gap: 4rem; // 40px converted to rem
+
+        @include tablet {
+            flex-direction: column;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 1.5rem;
+            text-align: center;
+        }
 
         .educationSectionTitle {
             text-align: center;
-            border: 3px solid #ff0000;
-            padding: 12px 22px;
-            border-radius: 5px;
-            min-width: 300px;
+            border: 0.3rem solid #ff0000; // 3px converted to rem
+            padding: 1.2rem 2.2rem; // 12px 22px converted to rem
+            border-radius: 0.5rem; // 5px converted to rem
+            min-width: 30rem; // 300px converted to rem
             flex-shrink: 0;
-            /* Add this to prevent the title from shrinking */
+
+            @include tablet {
+                min-width: auto;
+                width: 100%;
+                max-width: 40rem;
+                padding: 1rem 1.5rem;
+            }
+
+            @include mobile {
+                min-width: auto;
+                width: 100%;
+                padding: 0.8rem 1.2rem;
+                border-width: 0.2rem;
+            }
 
             h1 {
                 color: #ff0000;
-                font-size: 35px;
+                font-size: 3.5rem; // 35px converted to rem
                 font-weight: 600;
+
+                @include tablet {
+                    font-size: 2.8rem;
+                }
+
+                @include mobile {
+                    font-size: 2.2rem;
+                }
             }
         }
 
         .educationSectionShortDescription {
-            font-size: 32px;
+            font-size: 3.2rem; // 32px converted to rem
             font-weight: 500;
             text-align: right;
-            /* Add this to align the text to the right */
+
+            @include tablet {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            @include mobile {
+                font-size: 2rem;
+                text-align: center;
+            }
         }
     }
 
     .educationContainer {
-        margin-top: 20px;
+        margin-top: 2rem; // 20px converted to rem
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 35px;
+        gap: 3.5rem; // 35px converted to rem
+
+        @include tablet {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
 
         .educationCard {
             flex: 1 1 0;
-            border: 2px solid white;
-            border-radius: 16px;
+            border: 0.2rem solid white; // 2px converted to rem
+            border-radius: 1.6rem; // 16px converted to rem
             background-color: #000000;
             display: flex;
             flex-direction: column;
-            gap: 28px;
+            gap: 2.8rem; // 28px converted to rem
             align-items: center;
+
+            @include tablet {
+                width: 100%;
+                max-width: 50rem;
+            }
+
+            @include mobile {
+                width: 100%;
+                gap: 2rem;
+            }
 
             .educationCardHeader {
                 width: 100%;
                 text-align: center;
                 background-color: #003d25;
-                padding: 16px 15px;
-                border-top-left-radius: 16px;
-                border-top-right-radius: 16px;
+                padding: 1.6rem 1.5rem; // 16px 15px converted to rem
+                border-top-left-radius: 1.6rem; // 16px converted to rem
+                border-top-right-radius: 1.6rem; // 16px converted to rem
+
+                @include mobile {
+                    padding: 1.2rem 1rem;
+                }
 
                 .educationCardTitle {
-                    font-size: 25px;
+                    font-size: 2.5rem; // 25px converted to rem
                     font-weight: 500;
-                    line-height: 34px;
+                    line-height: 3.4rem; // 34px converted to rem
+
+                    @include tablet {
+                        font-size: 2.2rem;
+                        line-height: 3rem;
+                    }
+
+                    @include mobile {
+                        font-size: 1.8rem;
+                        line-height: 2.6rem;
+                    }
                 }
             }
 
             .educationCardBody {
-                padding: 0px 15px;
+                padding: 0 1.5rem; // 15px converted to rem
+
+                @include mobile {
+                    padding: 0 1rem;
+                }
 
                 .educationCardDescription {
-                    font-size: 13.5px;
-                    line-height: 28px;
+                    font-size: 1.35rem; // 13.5px converted to rem
+                    line-height: 2.8rem; // 28px converted to rem
                     text-align: center;
+
+                    @include tablet {
+                        font-size: 1.3rem;
+                        line-height: 2.4rem;
+                    }
+
+                    @include mobile {
+                        font-size: 1.2rem;
+                        line-height: 2.2rem;
+                    }
                 }
             }
 
@@ -81,18 +182,34 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding-bottom: 22px;
+                padding-bottom: 2.2rem; // 22px converted to rem
+
+                @include mobile {
+                    padding-bottom: 1.5rem;
+                }
 
                 .educationCardButton {
                     background-color: #01F595;
-                    padding: 8px 8px;
-                    border-radius: 5px;
+                    padding: 0.8rem; // 8px converted to rem
+                    border-radius: 0.5rem; // 5px converted to rem
                     border: none;
                     cursor: pointer;
                     color: black;
-                    font-size: 16px;
+                    font-size: 1.6rem; // 16px converted to rem
                     font-weight: 500;
-                    min-width: 120px;
+                    min-width: 12rem; // 120px converted to rem
+
+                    @include tablet {
+                        font-size: 1.5rem;
+                        min-width: 10rem;
+                        padding: 0.7rem;
+                    }
+
+                    @include mobile {
+                        font-size: 1.4rem;
+                        min-width: 8rem;
+                        padding: 0.6rem;
+                    }
                 }
             }
         }
@@ -101,9 +218,21 @@
     .educationSectionFooter {
         background-color: #171515;
         text-align: center;
-        margin-top: 17px;
-        padding: 17px;
-        line-height: 28px;
+        margin-top: 1.7rem; // 17px converted to rem
+        padding: 1.7rem; // 17px converted to rem
+        line-height: 2.8rem; // 28px converted to rem
+
+        @include tablet {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            line-height: 2.4rem;
+        }
+
+        @include mobile {
+            margin-top: 1.2rem;
+            padding: 1.2rem;
+            line-height: 2.2rem;
+        }
     }
 }
 

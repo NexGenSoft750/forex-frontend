@@ -1,16 +1,25 @@
+@import "../../styles/mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 .forum-category-filters {
-    margin-bottom: 40px;
+    margin-bottom: 4rem; // 40px converted to rem
     font-family: 'Poppins', sans-serif;
 
+    @include tablet {
+        margin-bottom: 3rem;
+    }
+
+    @include mobile {
+        margin-bottom: 2rem;
+    }
+
     &__hint {
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem; // 15px converted to rem
         text-align: center;
 
         span {
             color: #6E6E6E;
-            font-size: 14px;
+            font-size: 1.4rem; // 14px converted to rem
             font-style: italic;
             font-weight: 400;
         }
@@ -19,22 +28,44 @@
     &__row {
         display: flex;
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 1.4rem; // 14px converted to rem
+
+        @include tablet {
+            gap: 1rem;
+        }
+
+        @include mobile {
+            gap: 0.8rem;
+        }
     }
 
     &__button {
         background: #6E6E6E;
         border: 1px solid #FFFFFF;
         color: white;
-        padding: 6px 12px;
-        font-size: 14.5px;
+        padding: 0.6rem 1.2rem; // 6px 12px converted to rem
+        font-size: 1.45rem; // 14.5px converted to rem
         font-weight: 600;
         cursor: pointer;
-        width: 200px;
+        width: 20rem; // 200px converted to rem
         transform: skew(-24deg);
         transition: all 0.3s ease;
         position: relative;
         font-family: 'Poppins', sans-serif;
+
+        @include tablet {
+            width: 18rem;
+            font-size: 1.3rem;
+            padding: 0.5rem 1rem;
+            transform: skew(-15deg); // Less skew on tablet
+        }
+
+        @include mobile {
+            width: calc(50% - 0.4rem); // Two per line with gap consideration
+            font-size: 1.2rem;
+            padding: 0.4rem 0.8rem;
+            transform: skew(-10deg); // Less skew on mobile
+        }
 
         &--active {
             background: #dc2626;
@@ -48,6 +79,14 @@
         span {
             display: inline-block;
             transform: skew(24deg);
+
+            @include tablet {
+                transform: skew(15deg); // Less skew on tablet
+            }
+
+            @include mobile {
+                transform: skew(10deg); // Less skew on mobile
+            }
         }
     }
 }

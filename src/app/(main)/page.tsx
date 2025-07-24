@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <>
             <main>
-                <PageWithHeroLayout>
+                <PageWithHeroLayout alignItems='flex-start'>
                     <HeroSectionContentText />
                     <HeroSectionContentSecondaryText />
                 </PageWithHeroLayout>

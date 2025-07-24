@@ -1,8 +1,19 @@
+@import "../../styles/mixins.scss";
+
 .membership-subscription-plans {
     .membership-subscription-plans__heading {
         color: #1F2937;
         font-size: 2.4rem;
         font-weight: 700;
+
+        @include tablet {
+            font-size: 2.2rem;
+        }
+
+        @include mobile {
+            font-size: 2rem;
+            text-align: center;
+        }
     }
 
     .membership-subscription-plans__list {
@@ -10,6 +21,18 @@
         display: flex;
         align-items: stretch;
         gap: 3rem;
-        min-height: 395px;
+        min-height: 39.5rem; // 395px converted to rem
+
+        @include tablet {
+            flex-direction: column;
+            gap: 2rem;
+            min-height: auto;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 1.5rem;
+            min-height: auto;
+        }
     }
 }

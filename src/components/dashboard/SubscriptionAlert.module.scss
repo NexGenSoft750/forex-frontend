@@ -1,34 +1,63 @@
+@import "../../styles/mixins.scss";
+
 .subscription-alert {
     flex-grow: 1;
     background-color: #DCFCE7;
     border: 1px solid #BBF7D0;
     height: auto;
-    border-radius: 12px;
+    border-radius: 1.2rem; // 12px converted to rem
     display: flex;
     align-items: center;
     padding: 1.5rem 2.2rem;
+
+    @include tablet {
+        padding: 1.2rem 1.8rem;
+    }
+
+    @include mobile {
+        padding: 1rem 1.5rem;
+        text-align: center;
+    }
 
     .subscription-alert__container {
         .subscription-alert__user-name {
             color: #166534;
             font-weight: bolder;
-            margin-bottom: .9rem;
+            margin-bottom: 0.9rem;
+
+            @include mobile {
+                font-size: 1.4rem;
+                margin-bottom: 0.7rem;
+            }
         }
 
         .subscription-alert__message {
             color: #15803D;
             font-size: 1.6rem;
+
+            @include mobile {
+                font-size: 1.4rem;
+            }
         }
 
         .subscription-alert__separator {
             border: 1px solid #86efad98;
             margin: 1.8rem 0;
+
+            @include mobile {
+                margin: 1.5rem 0;
+            }
         }
 
         .subscription-alert__info-message {
             color: #16A34A;
             font-size: 1.5rem;
-            margin-bottom: .9rem;
+            margin-bottom: 0.9rem;
+
+            @include mobile {
+                font-size: 1.3rem;
+                margin-bottom: 0.7rem;
+            }
 
             .subscription-alert__label {
                 font-weight: 700;

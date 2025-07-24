@@ -1,27 +1,60 @@
+@import "../../styles/mixins.scss";
+
 .newsEvents {
-    margin-top: 80px;
+    margin-top: 8rem; // 80px converted to rem
+
+    @include tablet {
+        margin-top: 6rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+    }
 
     &InsightHeaderTitle {
         text-align: center;
         width: fit-content;
-        border: 3px solid #01F595;
-        padding: 12px 22px;
-        border-radius: 5px;
+        border: 0.3rem solid #01F595; // 3px converted to rem
+        padding: 1.2rem 2.2rem; // 12px 22px converted to rem
+        border-radius: 0.5rem; // 5px converted to rem
+
+        @include mobile {
+            padding: 1rem 1.5rem;
+            border-width: 0.2rem;
+        }
 
         h1 {
             color: #01F595;
-            font-size: 35px;
+            font-size: 3.5rem; // 35px converted to rem
             font-weight: 600;
+
+            @include tablet {
+                font-size: 2.8rem;
+            }
+
+            @include mobile {
+                font-size: 2.2rem;
+            }
         }
     }
 }
 
 .newsEventsArticleContainer {
-    margin-top: 40px;
+    margin-top: 4rem; // 40px converted to rem
     overflow: hidden;
     width: 100%;
     padding: 0 7vw;
     box-sizing: border-box;
+
+    @include tablet {
+        margin-top: 3rem;
+        padding: 0 5vw;
+    }
+
+    @include mobile {
+        margin-top: 2rem;
+        padding: 0 3vw;
+    }
 }
 
 .carouselWrapper {
@@ -71,22 +104,52 @@
     margin: 0 1vw;
     box-sizing: border-box;
     transition: box-shadow 0.3s;
+
+    @include tablet {
+        flex: 0 0 60vw;
+        min-width: 60vw;
+        max-width: 60vw;
+        margin: 0 1.5vw;
+    }
+
+    @include mobile {
+        flex: 0 0 80vw;
+        min-width: 80vw;
+        max-width: 80vw;
+        margin: 0 2vw;
+    }
 }
 
 .newsEventsArticleCard {
-    border: 2px solid #939393;
-    border-radius: 10px;
+    border: 0.2rem solid #939393; // 2px converted to rem
+    border-radius: 1rem; // 10px converted to rem
     display: flex;
     background: #181818;
-    height: 200px;
+    height: 20rem; // 200px converted to rem
     overflow: hidden;
-    box-shadow: 0 2px 16px 0 #00000033;
+    box-shadow: 0 0.2rem 1.6rem 0 #00000033; // 2px 16px converted to rem
+
+    @include tablet {
+        height: 18rem;
+        border-width: 0.15rem;
+    }
+
+    @include mobile {
+        height: 15rem;
+        border-width: 0.1rem;
+        flex-direction: column;
+    }
 
     .newsEventsArticleCardImage {
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mobile {
+            width: 100%;
+            height: 60%;
+        }
 
         img {
             width: 100%;
@@ -97,14 +160,34 @@
 
     .newsEventsArticleCardContent {
         width: 60%;
-        padding: 18px 14px;
+        padding: 1.8rem 1.4rem; // 18px 14px converted to rem
         display: flex;
         align-items: center;
 
+        @include tablet {
+            padding: 1.5rem 1.2rem;
+        }
+
+        @include mobile {
+            width: 100%;
+            height: 40%;
+            padding: 1rem;
+        }
+
         .cardDescription {
-            font-size: 14.5px;
-            line-height: 22px;
+            font-size: 1.45rem; // 14.5px converted to rem
+            line-height: 2.2rem; // 22px converted to rem
             color: #fff;
+
+            @include tablet {
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+
+            @include mobile {
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
         }
     }
 }

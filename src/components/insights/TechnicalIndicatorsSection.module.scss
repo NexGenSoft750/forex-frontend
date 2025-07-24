@@ -1,31 +1,71 @@
+@import "../../styles/mixins.scss";
+
 .technicalIndicatorsSection {
-    margin-top: 80px;
+    margin-top: 8rem; // 80px converted to rem
     width: 100%;
+
+    @include tablet {
+        margin-top: 6rem;
+    }
+
+    @include mobile {
+        margin-top: 4rem;
+    }
 }
 
 .tabContainer {
     display: flex;
-    gap: 22px;
+    gap: 2.2rem; // 22px converted to rem
+
+    @include tablet {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 .tabButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 22px;
-    padding: 17.6px 44px;
-    border-radius: 8.8px;
-    border: 3.08px solid;
+    gap: 2.2rem; // 22px converted to rem
+    padding: 1.76rem 4.4rem; // 17.6px 44px converted to rem
+    border-radius: 0.88rem; // 8.8px converted to rem
+    border: 0.308rem solid; // 3.08px converted to rem
     background: transparent;
     transition: background 0.2s;
     cursor: pointer;
     width: fit-content;
+
+    @include tablet {
+        padding: 1.5rem 3rem;
+        gap: 1.5rem;
+        border-width: 0.25rem;
+    }
+
+    @include mobile {
+        padding: 1.2rem 2rem;
+        gap: 1rem;
+        border-width: 0.2rem;
+    }
 }
 
 .tabTitle {
-    font-size: 32px;
+    font-size: 3.2rem; // 32px converted to rem
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-weight: 600;
+
+    @include tablet {
+        font-size: 2.5rem;
+    }
+
+    @include mobile {
+        font-size: 2rem;
+    }
 }
 
 .riskModeTab {
@@ -54,17 +94,35 @@
 
 .cardsContainer {
     display: flex;
-    gap: 66px;
+    gap: 6.6rem; // 66px converted to rem
     width: 100%;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 .cardBox {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2.5rem; // 25px converted to rem
     align-items: flex-start;
     width: 100%;
+
+    @include tablet {
+        gap: 2rem;
+    }
+
+    @include mobile {
+        gap: 1.5rem;
+    }
 }
 
 .card {
@@ -83,23 +141,57 @@
 }
 
 .cardBackgroundSmall {
-    width: 487px;
-    height: 560px;
+    width: 48.7rem; // 487px converted to rem
+    height: 56rem; // 560px converted to rem
+
+    @include tablet {
+        width: 100%;
+        height: 45rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        height: 35rem;
+    }
 }
 
 .cardBackgroundLarge {
-    width: 749px;
-    height: 560px;
+    width: 74.9rem; // 749px converted to rem
+    height: 56rem; // 560px converted to rem
+
+    @include tablet {
+        width: 100%;
+        height: 45rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        height: 35rem;
+    }
 }
 
 .cardDescription {
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 16.9px;
+    font-size: 1.69rem; // 16.9px converted to rem
     font-weight: 500;
-    line-height: 33px;
+    line-height: 3.3rem; // 33px converted to rem
     color: #ffffff;
-    margin-top: 20px;
-    padding: 0 20px;
+    margin-top: 2rem; // 20px converted to rem
+    padding: 0 2rem; // 20px converted to rem
+
+    @include tablet {
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+        margin-top: 1.5rem;
+        padding: 0 1.5rem;
+    }
+
+    @include mobile {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
 }
 
 .leftAlign {
@@ -116,118 +208,174 @@
 
 .riskOnOffTitle {
     position: absolute;
-    height: 65px;
-    top: 290px;
-    left: 110px;
+    height: 6.5rem; // 65px converted to rem
+    top: 29rem; // 290px converted to rem
+    left: 11rem; // 110px converted to rem
 
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 600;
     color: #ffffff;
-    font-size: 43.3px;
+    font-size: 4.33rem; // 43.3px converted to rem
+
+    @include tablet {
+        top: 20rem;
+        left: 8rem;
+        font-size: 3.5rem;
+    }
+
+    @include mobile {
+        top: 15rem;
+        left: 5rem;
+        font-size: 2.8rem;
+    }
 }
 
 .riskOnOffGraphics {
     position: absolute;
-    width: 390px;
-    height: 208px;
-    top: 40px;
-    left: 45px;
+    width: 39rem; // 390px converted to rem
+    height: 20.8rem; // 208px converted to rem
+    top: 4rem; // 40px converted to rem
+    left: 4.5rem; // 45px converted to rem
+
+    @include tablet {
+        width: 30rem;
+        height: 16rem;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    @include mobile {
+        width: 25rem;
+        height: 13rem;
+        top: 2rem;
+        left: 2rem;
+    }
 }
 
 .ellipse1 {
     position: absolute;
-    top: 17px;
-    left: 254px;
+    top: 1.7rem; // 17px converted to rem
+    left: 25.4rem; // 254px converted to rem
+
+    @include mobile {
+        left: 20rem;
+    }
 }
 
 .ellipse2 {
     position: absolute;
     top: 0;
-    left: 130px;
+    left: 13rem; // 130px converted to rem
+
+    @include mobile {
+        left: 10rem;
+    }
 }
 
 .ellipse3 {
     position: absolute;
-    top: 18px;
+    top: 1.8rem; // 18px converted to rem
     left: 0;
 }
 
 .circle {
     position: absolute;
-    width: 27px;
-    height: 27px;
-    top: 181px;
-    left: 143px;
+    width: 2.7rem; // 27px converted to rem
+    height: 2.7rem; // 27px converted to rem
+    top: 18.1rem; // 181px converted to rem
+    left: 14.3rem; // 143px converted to rem
     background: #ffffff;
-    border-radius: 13.32px;
+    border-radius: 1.332rem; // 13.32px converted to rem
+
+    @include mobile {
+        top: 14rem;
+        left: 11rem;
+    }
 }
 
 .vector {
     position: absolute;
-    top: 183px;
-    left: 169px;
+    top: 18.3rem; // 183px converted to rem
+    left: 16.9rem; // 169px converted to rem
+
+    @include mobile {
+        top: 14.2rem;
+        left: 13.5rem;
+    }
 }
 
 .offText {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 136px;
-    left: 48px;
+    width: 5rem; // 50px converted to rem
+    height: 5rem; // 50px converted to rem
+    top: 13.6rem; // 136px converted to rem
+    left: 4.8rem; // 48px converted to rem
     transform: rotate(-20.44deg);
     color: #ffffff;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 21.4px;
-    -webkit-text-stroke: 0.54px #ffffff;
+    font-size: 2.14rem; // 21.4px converted to rem
+    -webkit-text-stroke: 0.054rem #ffffff; // 0.54px converted to rem
+
+    @include mobile {
+        top: 10.5rem;
+        left: 3.5rem;
+        font-size: 1.7rem;
+    }
 
     span {
         position: absolute;
 
         &:nth-child(1) {
             transform: rotate(-71.24deg);
-            top: 29px;
-            left: 5px;
+            top: 2.9rem; // 29px converted to rem
+            left: 0.5rem; // 5px converted to rem
         }
 
         &:nth-child(2) {
             transform: rotate(-56.95deg);
-            top: 14px;
-            left: 15px;
+            top: 1.4rem; // 14px converted to rem
+            left: 1.5rem; // 15px converted to rem
         }
 
         &:nth-child(3) {
             transform: rotate(-45.21deg);
-            top: 2px;
-            left: 24px;
+            top: 0.2rem; // 2px converted to rem
+            left: 2.4rem; // 24px converted to rem
         }
     }
 }
 
 .onText {
     position: absolute;
-    width: 42px;
-    height: 32px;
-    top: 150px;
-    left: 304px;
+    width: 4.2rem; // 42px converted to rem
+    height: 3.2rem; // 32px converted to rem
+    top: 15rem; // 150px converted to rem
+    left: 30.4rem; // 304px converted to rem
     transform: rotate(54deg);
     color: #ffffff;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 22px;
-    -webkit-text-stroke: 0.54px #ffffff;
+    font-size: 2.2rem; // 22px converted to rem
+    -webkit-text-stroke: 0.054rem #ffffff; // 0.54px converted to rem
+
+    @include mobile {
+        top: 11.5rem;
+        left: 23rem;
+        font-size: 1.8rem;
+    }
 
     span {
         position: absolute;
 
         &:nth-child(1) {
             transform: rotate(23.98deg);
-            top: 2px;
-            left: 3px;
+            top: 0.2rem; // 2px converted to rem
+            left: 0.3rem; // 3px converted to rem
         }
 
         &:nth-child(2) {
             transform: rotate(26.86deg);
-            top: 8px;
-            left: 21px;
+            top: 0.8rem; // 8px converted to rem
+            left: 2.1rem; // 21px converted to rem
         }
     }
 }
@@ -240,15 +388,21 @@
 
 .neutralText {
     position: absolute;
-    width: 93px;
-    height: 47px;
-    top: 42px;
-    left: 158px;
+    width: 9.3rem; // 93px converted to rem
+    height: 4.7rem; // 47px converted to rem
+    top: 4.2rem; // 42px converted to rem
+    left: 15.8rem; // 158px converted to rem
     transform: rotate(-22.62deg);
     color: #ffffff;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 20.9px;
-    -webkit-text-stroke: 0.37px #ffffff;
+    font-size: 2.09rem; // 20.9px converted to rem
+    -webkit-text-stroke: 0.037rem #ffffff; // 0.37px converted to rem
+
+    @include mobile {
+        top: 3rem;
+        left: 12rem;
+        font-size: 1.7rem;
+    }
 
     span {
         position: absolute;
@@ -261,52 +415,68 @@
 
         &:nth-child(2) {
             transform: rotate(13.15deg);
-            top: 1px;
-            left: 15.5px;
+            top: 0.1rem; // 1px converted to rem
+            left: 1.55rem; // 15.5px converted to rem
         }
 
         &:nth-child(3) {
             transform: rotate(20.61deg);
-            top: 2.5px;
-            left: 27px;
+            top: 0.25rem; // 2.5px converted to rem
+            left: 2.7rem; // 27px converted to rem
         }
 
         &:nth-child(4) {
             transform: rotate(26.43deg);
-            top: 5px;
-            left: 40px;
+            top: 0.5rem; // 5px converted to rem
+            left: 4rem; // 40px converted to rem
         }
 
         &:nth-child(5) {
             transform: rotate(30.88deg);
-            top: 7px;
-            left: 47px;
+            top: 0.7rem; // 7px converted to rem
+            left: 4.7rem; // 47px converted to rem
         }
 
         &:nth-child(6) {
             transform: rotate(36.77deg);
-            top: 10.5px;
-            left: 54px;
+            top: 1.05rem; // 10.5px converted to rem
+            left: 5.4rem; // 54px converted to rem
         }
 
         &:nth-child(7) {
             transform: rotate(41.82deg);
-            top: 16px;
-            left: 65px;
+            top: 1.6rem; // 16px converted to rem
+            left: 6.5rem; // 65px converted to rem
         }
     }
 }
 
 .fundamentalText {
     position: absolute;
-    bottom: 40px;
-    left: 9px;
-    right: 40px;
+    bottom: 4rem; // 40px converted to rem
+    left: 0.9rem; // 9px converted to rem
+    right: 4rem; // 40px converted to rem
     color: #ffffff;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1.6rem; // 16px converted to rem
+    line-height: 2.8rem; // 28px converted to rem
     text-align: center;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
+
+    @include tablet {
+        bottom: 3rem;
+        left: 1rem;
+        right: 3rem;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+    @include mobile {
+        bottom: 2rem;
+        left: 1rem;
+        right: 2rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
 
     .highlight {
         color: #01f595;
@@ -316,14 +486,30 @@
 
 .fundamentalText2 {
     position: absolute;
-    bottom: 40px;
-    left: 38px;
-    right: 40px;
+    bottom: 4rem; // 40px converted to rem
+    left: 3.8rem; // 38px converted to rem
+    right: 4rem; // 40px converted to rem
     color: #ffffff;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1.6rem; // 16px converted to rem
+    line-height: 2.8rem; // 28px converted to rem
     text-align: center;
     font-family: 'Inter', Helvetica, Arial, sans-serif;
+
+    @include tablet {
+        bottom: 3rem;
+        left: 3rem;
+        right: 3rem;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+    @include mobile {
+        bottom: 2rem;
+        left: 2rem;
+        right: 2rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
 
     .highlight {
         color: #01f595;
@@ -333,6 +519,11 @@
 
 .retailPositionsChart {
     position: absolute;
-    top: 42px;
-    left: 41px;
+    top: 4.2rem; // 42px converted to rem
+    left: 4.1rem; // 41px converted to rem
+
+    @include mobile {
+        top: 3rem;
+        left: 3rem;
+    }
 }

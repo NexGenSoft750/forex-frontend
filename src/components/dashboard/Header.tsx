@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { ReactNode } from 'react';
 
 type HeaderProps = {
     className?: string;
@@ -14,6 +15,7 @@ type HeaderProps = {
     userNameClassName?: string;
     userRoleClassName?: string;
     downArrowClassName?: string;
+    children?: ReactNode;
 };
 
 export default function Header({
@@ -29,14 +31,18 @@ export default function Header({
     profileInfoClassName = '',
     userNameClassName = '',
     userRoleClassName = '',
-    downArrowClassName = ''
+    downArrowClassName = '',
+    children
 }: HeaderProps = {}) {
     return (
         <>
             <header className={`${className}`}>
-                <h1 className={`${headingClassName}`}>
-                    Score Board!
-                </h1>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    {children}
+                    <h1 className={`${headingClassName}`}>
+                        Score Board!
+                    </h1>
+                </div>
                 <div className={`${actionsClassName}`}>
                     <div className={`${notificationClassName}`}>
                         <Image

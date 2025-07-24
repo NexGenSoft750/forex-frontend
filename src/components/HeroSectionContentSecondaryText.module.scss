@@ -1,12 +1,28 @@
+@import "../styles/mixins.scss";
+
 .heroSectionContentSecondaryText {
     text-align: center;
     color: #ffffff;
-    margin-top: 22px;
-    font-size: 17px;
-    line-height: 28px;
-    padding: 0px 50px;
+    margin-top: 2.2rem; // 22px converted to rem
+    font-size: 1.7rem; // 17px converted to rem
+    line-height: 2.8rem; // 28px converted to rem
+    padding: 0 5rem; // 50px converted to rem
+
+    @include tablet {
+        margin-top: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        padding: 0 3rem;
+    }
+
+    @include mobile {
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding: 0 1.5rem;
+    }
 
     .heroSectionSecondaryHighlightText {
-        color: #16ff7f
+        color: #16ff7f;
     }
 }

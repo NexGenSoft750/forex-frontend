@@ -1,24 +1,68 @@
+@import "../styles/mixins.scss";
+
 .heroSectionContentText {
     text-align: center;
     font-weight: 600;
 
+    @include tablet {
+        padding: 0 2rem;
+    }
+
+    @include mobile {
+        padding: 0 1rem;
+    }
+
     .heroSectionText {
         display: inline-block;
-        margin-bottom: 12px;
+        margin-bottom: 1.2rem; // 12px converted to rem
         color: #ffffff;
+
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+
+        @include mobile {
+            margin-bottom: 0.8rem;
+        }
     }
 
     .heroSectionLargeLightText {
-        font-size: 80px;
+        font-size: 8rem; // 80px converted to rem
+
+        @include tablet {
+            font-size: 5rem;
+        }
+
+        @include mobile {
+            font-size: 3rem;
+        }
     }
 
     .heroSectionSmallLightText {
-        font-size: 35px;
-        margin-left: 13px;
+        font-size: 3.5rem; // 35px converted to rem
+        margin-left: 1.3rem; // 13px converted to rem
+
+        @include tablet {
+            font-size: 2.5rem;
+            margin-left: 1rem;
+        }
+
+        @include mobile {
+            font-size: 1.8rem;
+            margin-left: 0.8rem;
+        }
     }
 
     .heroSectionLargeDarkText {
-        font-size: 86px;
+        font-size: 8.6rem; // 86px converted to rem
         color: #FF0000 !important;
+
+        @include tablet {
+            font-size: 5.5rem;
+        }
+
+        @include mobile {
+            font-size: 3.2rem;
+        }
     }
 }
