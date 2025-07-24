@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import PageWithHeroLayout from "@/components/layouts/PageWithHeroLayout";
 import ForumLayout from "@/components/forum/ForumLayout";
 import ForumRepliesSection from "@/components/forum/ForumRepliesSection";
-import { forumPosts, forumReplies } from "@/lib/forumData";
+import { forumPosts } from "@/lib/forumData";
 
 export default function Forum() {
     const searchParams = useSearchParams();

@@ -17,7 +17,6 @@ export default function ForumPostCard({
     date,
     summary,
     repliesCount,
-    category,
     slug
 }: ForumPostCardProps) {
     // Truncate summary to show only first 150 characters

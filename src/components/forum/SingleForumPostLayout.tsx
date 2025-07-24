@@ -9,7 +9,7 @@ type SingleForumPostLayoutProps = {
 }
 
 export default function SingleForumPostLayout({ slug }: SingleForumPostLayoutProps) {
-    const [activeCategory, setActiveCategory] = useState('Trading Discussions');
+    const [, setActiveCategory] = useState('Trading Discussions');
 
     const post = getForumPostBySlug(slug);
     const replies = getForumRepliesBySlug(slug);
