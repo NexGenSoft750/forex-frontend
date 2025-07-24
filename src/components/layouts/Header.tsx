@@ -6,7 +6,7 @@ import styles from './Header.module.scss';
 import { NavBar } from './NavBar';
 import { useLanguage } from '../../components/LanguageProvider';
 import { useTranslations } from 'next-intl';
-import { FiChevronDown } from 'react-icons/fi';
+import { FiChevronDown, FiMenu } from 'react-icons/fi';
 import LoginModal from './LoginModal';
 import RegisterModal from './RegisterModal';
 
@@ -15,6 +15,7 @@ export function Header() {
     const t = useTranslations();
     const [showLoginModal, setShowLoginModal] = useState(false);
     const [showRegisterModal, setShowRegisterModal] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const languages = [
         {
@@ -53,12 +54,31 @@ export function Header() {
         setShowLoginModal(true);
     };
 
+    const handleCloseMenu = () => {
+        setMobileMenuOpen(false);
+    };
+
+    const handleToggleMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+    };
+
     return (
         <section>
             <header className={styles.header}>
-                <div className={styles.headerLogo}>Logo</div>
+                <div className={styles.headerLeft}>
+                    {/* Mobile Menu Toggle Button - Left side of logo */}
+                    <button
+                        className={`${styles.mobileMenuToggle} ${mobileMenuOpen ? styles.hidden : ''}`}
+                        onClick={handleToggleMenu}
+                        aria-label="Toggle mobile menu"
+                    >
+                        <FiMenu size={24} />
+                    </button>
 
-                <NavBar />
+                    <div className={styles.headerLogo}>Logo</div>
+                </div>
+
+                <NavBar isOpen={mobileMenuOpen} closeMenu={handleCloseMenu} />
 
                 <div className={styles.headerActions}>
                     <Dropdown className={styles.languageDropdown}>

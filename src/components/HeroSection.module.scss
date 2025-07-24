@@ -1,22 +1,48 @@
+@import "../styles/mixins.scss";
+
 .heroSection {
     display: flex;
-    margin-top: 25px;
-    gap: 55px;
+    margin-top: 2.5rem; // 25px converted to rem
+    gap: 5.5rem; // 55px converted to rem
     position: relative;
+
+    @include tablet {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    @include mobile {
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
 
     .heroSectionAside {
         width: 15vw;
         height: fit-content;
         align-self: flex-start;
 
+        @include tablet {
+            width: 100%;
+            order: -1; // Move aside to top on mobile
+        }
+
         &.heroSectionAsideSticky {
             position: sticky;
-            top: 25px;
+            top: 2.5rem; // 25px converted to rem
+
+            @include tablet {
+                position: static; // Disable sticky on mobile
+            }
         }
     }
 
     .heroSectionContent {
         width: 85%;
         flex: 1;
+
+        @include tablet {
+            width: 100%;
+        }
     }
 }

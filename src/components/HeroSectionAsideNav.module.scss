@@ -1,14 +1,31 @@
+@import "../styles/mixins.scss";
+
 .heroSectionAsideNav {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1.2rem; // 12px converted to rem
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    @include mobile {
+        gap: 0.8rem;
+    }
 
     li {
         margin: 0;
         padding: 0;
         list-style: none;
+
+        @include tablet {
+            flex: 0 0 auto;
+        }
     }
 }

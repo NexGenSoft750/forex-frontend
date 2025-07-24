@@ -1,3 +1,6 @@
+// Import our responsive mixins first
+@use "./mixins.scss" as *;
+
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
@@ -10,6 +13,12 @@
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 
+// ===== RESPONSIVE FOUNDATION =====
+// Base font-size setup: 1rem = 10px
+html {
+  font-size: 62.5%; // 10px base
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +30,7 @@ body[data-layout="main"] * {
 }
 
 html[data-layout="main"] {
-  font-size: 100%;
+  font-size: 62.5%; // 10px base
 }
 
 body[data-layout="main"] {
@@ -30,10 +39,21 @@ body[data-layout="main"] {
   margin: 0;
   height: 100vh;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 1.6rem; // 16px base font size
 
   section {
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 6.5rem; // 65px
+    padding-right: 6.5rem; // 65px
+
+    @include tablet {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    @include mobile {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }
 
@@ -43,6 +63,11 @@ ul {
   a {
     text-decoration: none;
   }
+}
+
+// Container for content width control
+.container {
+  @include container;
 }
 
 // Modal styles
@@ -77,14 +102,14 @@ ul {
   position: relative;
   width: auto;
   margin: 1.75rem auto !important;
-  max-width: 620px !important;
+  max-width: 62rem !important; // 620px converted to rem
   pointer-events: none;
   z-index: 1056 !important; // Ensure modal content is above backdrop
 }
 
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
-  transform: translate(0, -50px);
+  transform: translate(0, -5rem); // 50px converted to rem
 }
 
 .modal.show .modal-dialog {

@@ -1,79 +1,138 @@
+@import "../../styles/mixins.scss";
+
 .packages-card {
     flex: 1 1 0;
     background-color: #EAEAEA;
-    border-radius: 12px;
-    padding: 25px;
+    border-radius: 1.2rem; // 12px converted to rem
+    padding: 2.5rem; // 25px converted to rem
     display: flex;
     flex-direction: column;
-    height: 480px;
+    height: 48rem; // 480px converted to rem
+
+    @include tablet {
+        height: auto;
+        min-height: 40rem;
+        padding: 2rem;
+    }
+
+    @include mobile {
+        padding: 1.5rem;
+        min-height: 35rem;
+    }
 
     .packages-card__header {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 20px;
+        gap: 2rem; // 20px converted to rem
+
+        @include mobile {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+        }
 
         .packages-card__name {
             color: #1F2937;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 2rem; // 20px converted to rem
+
+            @include tablet {
+                font-size: 1.8rem;
+            }
+
+            @include mobile {
+                font-size: 1.6rem;
+            }
         }
 
         .packages-card__badge {
             background-color: #FFFFFF;
-            padding: 5px 18px;
-            font-size: 13px;
+            padding: 0.5rem 1.8rem; // 5px 18px converted to rem
+            font-size: 1.3rem; // 13px converted to rem
             font-weight: 700;
-            border-radius: 30px;
+            border-radius: 3rem; // 30px converted to rem
+
+            @include mobile {
+                padding: 0.4rem 1.5rem;
+                font-size: 1.2rem;
+            }
         }
     }
 
     .packages-card__body {
-        margin-top: 13px;
+        margin-top: 1.3rem; // 13px converted to rem
         flex: 1;
         display: flex;
         flex-direction: column;
 
         .packages-card__tax-price {
             color: #6B7280;
-            font-size: 14.5px;
+            font-size: 1.45rem; // 14.5px converted to rem
             font-weight: 400;
+
+            @include mobile {
+                font-size: 1.3rem;
+            }
         }
 
         .packages-card__prices {
-            margin-top: 18px;
+            margin-top: 1.8rem; // 18px converted to rem
 
             .packages-card__discounted-price {
                 position: relative;
                 color: #019042;
-                font-size: 26px;
+                font-size: 2.6rem; // 26px converted to rem
                 font-weight: 700;
+
+                @include tablet {
+                    font-size: 2.4rem;
+                }
+
+                @include mobile {
+                    font-size: 2.2rem;
+                }
 
                 .packages-card__price-period {
                     color: #019042;
-                    font-size: 14.5px;
+                    font-size: 1.45rem; // 14.5px converted to rem
                     font-weight: 400;
-                    margin-left: 5px;
+                    margin-left: 0.5rem; // 5px converted to rem
+
+                    @include mobile {
+                        font-size: 1.3rem;
+                    }
                 }
 
                 .packages-card__original-price {
                     position: absolute;
-                    top: -6px;
-                    right: -45px;
+                    top: -0.6rem; // -6px converted to rem
+                    right: -4.5rem; // -45px converted to rem
                     color: #EF4444;
-                    font-size: 12.5px;
+                    font-size: 1.25rem; // 12.5px converted to rem
                     font-weight: 600;
                     text-decoration: line-through;
+
+                    @include mobile {
+                        position: static;
+                        margin-left: 1rem;
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
 
         .packages-card__duration {
             color: #6B7280;
-            font-size: 13.5px;
+            font-size: 1.35rem; // 13.5px converted to rem
             font-weight: 400;
             display: block;
-            margin-top: 22px;
+            margin-top: 2.2rem; // 22px converted to rem
+
+            @include mobile {
+                font-size: 1.2rem;
+                margin-top: 1.5rem;
+            }
         }
 
         .packages-card__text-box {
@@ -82,13 +141,19 @@
             outline: none;
             color: #4b5563;
             background-color: #f9fafb;
-            border-radius: 8px;
-            padding: 14px;
-            margin-top: 14px;
+            border-radius: 0.8rem; // 8px converted to rem
+            padding: 1.4rem; // 14px converted to rem
+            margin-top: 1.4rem; // 14px converted to rem
             width: 100%;
             height: 100%;
             overflow: auto;
             flex-shrink: 1;
+
+            @include mobile {
+                padding: 1rem;
+                margin-top: 1rem;
+                min-height: 8rem;
+            }
 
             &::placeholder {
                 color: #4B5563;
@@ -97,18 +162,27 @@
     }
 
     .packages-card__footer {
-        margin-top: 18px;
+        margin-top: 1.8rem; // 18px converted to rem
+
+        @include mobile {
+            margin-top: 1.5rem;
+        }
 
         .packages-card__subscribe-btn {
             color: #ffffff;
             background-color: #019042;
             border: none;
-            border-radius: 8px;
-            padding: 17px;
+            border-radius: 0.8rem; // 8px converted to rem
+            padding: 1.7rem; // 17px converted to rem
             width: 100%;
-            font-size: 14px;
+            font-size: 1.4rem; // 14px converted to rem
             font-weight: 700;
             cursor: pointer;
+
+            @include mobile {
+                padding: 1.4rem;
+                font-size: 1.3rem;
+            }
         }
     }
 }

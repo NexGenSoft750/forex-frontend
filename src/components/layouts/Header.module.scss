@@ -1,36 +1,67 @@
+@import "../../styles/mixins.scss";
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 2rem 0; // 20px converted to rem
+
+    @include tablet {
+        padding: 1.5rem 0;
+    }
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem; // Gap between hamburger and logo
+    flex: 0 0 auto;
 }
 
 .headerLogo {
-    font-size: 24px;
+    font-size: 2.4rem; // 24px converted to rem
     font-weight: bold;
+    flex: 0 0 auto;
 }
 
 .headerActions {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 2.5rem; // 25px converted to rem
     flex: 0 0 auto;
+
+    @include tablet {
+        gap: 1.5rem;
+    }
 }
 
 .loginBtn {
     background: none;
-    font-size: 15px;
+    font-size: 1.5rem; // 15px converted to rem
     font-weight: 600;
     border: 1px solid white;
-    padding: 8px 30px;
+    padding: 0.8rem 3rem; // 8px 30px converted to rem
     border-radius: 4px;
     cursor: pointer;
+
+    @include tablet {
+        font-size: 1.4rem;
+        padding: 0.6rem 2rem;
+    }
 }
 
 .languageDropdown {
-    min-width: 180px;
+    min-width: 18rem; // 180px converted to rem
     display: flex;
     justify-content: flex-end;
+
+    @include tablet {
+        min-width: 16rem; // Slightly smaller on tablet
+    }
+
+    @include mobile {
+        min-width: 14rem; // Even smaller on mobile
+    }
 
     :global {
         .dropdown-toggle {
@@ -52,14 +83,22 @@
             background: transparent !important;
             border: none !important;
             box-shadow: none !important;
-            min-width: 180px;
-            padding: 8px;
-            margin-top: 8px;
+            min-width: 18rem; // 180px converted to rem
+            padding: 0.8rem; // 8px converted to rem
+            margin-top: 0.8rem; // 8px converted to rem
+
+            @include tablet {
+                min-width: 16rem;
+            }
+
+            @include mobile {
+                min-width: 14rem;
+            }
         }
 
         .dropdown-item {
             color: #fff !important;
-            padding: 8px 12px;
+            padding: 0.8rem 1.2rem; // 8px 12px converted to rem
             border-radius: 4px;
             width: 100%;
 
@@ -81,13 +120,32 @@
     gap: 0.7em;
     justify-content: flex-end;
     width: 100%;
+    font-size: 1.4rem; // Maintain readable size
+
+    @include tablet {
+        font-size: 1.3rem;
+    }
+
+    @include mobile {
+        font-size: 1.2rem;
+    }
 }
 
 .languageDropdownFlag {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem; // 24px converted to rem
+    height: 2.4rem; // 24px converted to rem
     border-radius: 50%;
     object-fit: cover;
+
+    @include tablet {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    @include mobile {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .languageDropdownItemTitle {
@@ -95,11 +153,50 @@
     align-items: center;
     gap: 0.7em;
     width: 100%;
+    font-size: 1.4rem; // Maintain readable size
+
+    @include tablet {
+        font-size: 1.3rem;
+    }
+
+    @include mobile {
+        font-size: 1.2rem;
+    }
 }
 
 .languageDropdownItemFlag {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem; // 24px converted to rem
+    height: 2.4rem; // 24px converted to rem
     border-radius: 50%;
     object-fit: cover;
+
+    @include tablet {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    @include mobile {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* === MOBILE MENU TOGGLE === */
+.mobileMenuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1060;
+    position: relative;
+
+    @include tablet {
+        display: block;
+    }
+
+    &.hidden {
+        display: none !important;
+    }
 }

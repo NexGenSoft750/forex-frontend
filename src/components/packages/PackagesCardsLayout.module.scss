@@ -1,5 +1,17 @@
+@import "../../styles/mixins.scss";
+
 .packages-cards-layout {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 2.5rem; // 25px converted to rem
+
+    @include tablet {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+    @include mobile {
+        gap: 1.5rem;
+    }
 }
